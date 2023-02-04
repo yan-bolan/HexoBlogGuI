@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Sunny.UI.Demo
+namespace ChiSaTo
 {
     static class Program
     {

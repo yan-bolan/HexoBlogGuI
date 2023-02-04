@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Sunny.UI.Demo
+using Sunny.UI; namespace ChiSaTo
 {
     public partial class FDataGridView : UIPage
     {

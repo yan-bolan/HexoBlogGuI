@@ -1,4 +1,4 @@
-﻿namespace Sunny.UI.Demo
+﻿using Sunny.UI; namespace ChiSaTo
 {
     public partial class FTitlePage2 : UIPage
     {

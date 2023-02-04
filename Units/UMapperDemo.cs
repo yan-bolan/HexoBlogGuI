@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace Sunny.UI.Demo
+using Sunny.UI; namespace ChiSaTo
 {
     public static class MapperDemo
     {

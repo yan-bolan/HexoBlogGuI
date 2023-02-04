@@ -1,5 +1,5 @@
 ﻿
-namespace Sunny.UI.Demo
+using Sunny.UI; namespace ChiSaTo
 {
     partial class FOther
     {

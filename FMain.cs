@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-
-namespace Sunny.UI.Demo
+using Sunny.UI;
+namespace ChiSaTo
 {
     public partial class FMain : UIHeaderAsideMainFrame
     {
@@ -65,11 +65,12 @@ namespace Sunny.UI.Demo
             Header.SetNodeSymbol(Header.Nodes[3], 362614);
             parent = Aside.CreateNode("工控", 362614, 24, pageIndex);
             //直接关联（默认自动生成GUID）
+           var mp  =  System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Namespace ;
 
-            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>("Sunny.UI.Demo.FPipe")));
-            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>("Sunny.UI.Demo.FMeter")));
-            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>("Sunny.UI.Demo.FLed")));
-            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>("Sunny.UI.Demo.FLight")));
+            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FPipe")));
+            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FMeter")));
+            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FLed")));
+            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FLight")));
 
             Header.SetNodeSymbol(Header.Nodes[4], 61502);
             var styles = UIStyles.PopularStyles();
@@ -86,8 +87,8 @@ namespace Sunny.UI.Demo
             //选中第一个节点
             Aside.SelectPage(1002);
 
-            Text = Version;
-            RegisterHotKey(UI.ModifierKeys.Shift, Keys.F8);
+            //Text = Version; 标题
+            RegisterHotKey(Sunny.UI.ModifierKeys.Shift, Keys.F8);
 
             //根据页面类型获取页面
             FButton page = GetPage<FButton>();
@@ -149,7 +150,7 @@ namespace Sunny.UI.Demo
 
         private void FMain_HotKeyEventHandler(object sender, HotKeyEventArgs e)
         {
-            if (e.hotKey.ModifierKey == UI.ModifierKeys.Shift && e.hotKey.Key == Keys.F8)
+            if (e.hotKey.ModifierKey == Sunny.UI.ModifierKeys.Shift && e.hotKey.Key == Keys.F8)
             {
                 ShowInfoTip("您按下了全局系统热键 Shift+F8");
             }

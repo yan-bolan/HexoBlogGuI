@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace Sunny.UI.Demo
+using Sunny.UI; namespace ChiSaTo
 {
     public partial class FBarChart : UIPage
     {

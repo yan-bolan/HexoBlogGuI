@@ -233,6 +233,16 @@ namespace ChiSaTo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avtarhutao {
+            get {
+                object obj = ResourceManager.GetObject("avtarhutao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap barcelona {
             get {
                 object obj = ResourceManager.GetObject("barcelona", resourceCulture);
@@ -466,6 +476,16 @@ namespace ChiSaTo.Properties {
         internal static System.Drawing.Bitmap lazio {
             get {
                 object obj = ResourceManager.GetObject("lazio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
