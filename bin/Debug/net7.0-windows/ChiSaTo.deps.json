@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ChiSaTo/1.0.0": {
+        "dependencies": {
+          "SunnyUI": "3.3.1"
+        },
+        "runtime": {
+          "ChiSaTo.dll": {}
+        }
+      },
+      "SunnyUI/3.3.1": {
+        "dependencies": {
+          "SunnyUI.Common": "3.3.1"
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/SunnyUI.dll": {
+            "assemblyVersion": "3.3.1.0",
+            "fileVersion": "3.3.1.0"
+          }
+        }
+      },
+      "SunnyUI.Common/3.3.1": {
+        "runtime": {
+          "lib/net7.0/SunnyUI.Common.dll": {
+            "assemblyVersion": "3.3.1.0",
+            "fileVersion": "3.3.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChiSaTo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SunnyUI/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9GGGP4xlYI9W8fAg56Yd9IKAceAo2Dfl9xS4vXD69HopY9u91jFvqMLgDbgjnCyRTI/wwIgtkiwdAM8+1zmftA==",
+      "path": "sunnyui/3.3.1",
+      "hashPath": "sunnyui.3.3.1.nupkg.sha512"
+    },
+    "SunnyUI.Common/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qjpQxBbkARoQVXjLWVmI2LH8wnR1tdu+aa6Sm0BPGlFMFy8gmEY2e6Pg4Om2SZBCpfcTrwsgSj5WKfrfra85Pg==",
+      "path": "sunnyui.common/3.3.1",
+      "hashPath": "sunnyui.common.3.3.1.nupkg.sha512"
+    }
+  }
+}
