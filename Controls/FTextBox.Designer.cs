@@ -73,7 +73,7 @@ namespace Sunny.UI.Demo
             this.uiTextBox5.ButtonWidth = 100;
             this.uiTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox5.Icon = global::Sunny.UI.Demo.Properties.Resources.Home_32x32;
+            this.uiTextBox5.Icon = global::ChiSaTo.Properties.Resources.Home_32x32;
             this.uiTextBox5.Location = new System.Drawing.Point(117, 128);
             this.uiTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox5.MinimumSize = new System.Drawing.Size(1, 1);

@@ -51,8 +51,8 @@
             // 
             this.btnAM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAM.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnAM.Image = global::Sunny.UI.Demo.Properties.Resources.AM;
-            this.btnAM.ImageHover = global::Sunny.UI.Demo.Properties.Resources.AM1;
+            this.btnAM.Image = global::ChiSaTo.Properties.Resources.AM;
+            this.btnAM.ImageHover = global::ChiSaTo.Properties.Resources.AM1;
             this.btnAM.Location = new System.Drawing.Point(30, 234);
             this.btnAM.Name = "btnAM";
             this.btnAM.Size = new System.Drawing.Size(160, 120);
@@ -66,8 +66,8 @@
             // 
             this.btnAHMF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAHMF.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnAHMF.Image = global::Sunny.UI.Demo.Properties.Resources.AHMF;
-            this.btnAHMF.ImageHover = global::Sunny.UI.Demo.Properties.Resources.AHMF1;
+            this.btnAHMF.Image = global::ChiSaTo.Properties.Resources.AHMF;
+            this.btnAHMF.ImageHover = global::ChiSaTo.Properties.Resources.AHMF1;
             this.btnAHMF.Location = new System.Drawing.Point(398, 234);
             this.btnAHMF.Name = "btnAHMF";
             this.btnAHMF.Size = new System.Drawing.Size(160, 120);
@@ -81,8 +81,8 @@
             // 
             this.btnHAMF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHAMF.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnHAMF.Image = global::Sunny.UI.Demo.Properties.Resources.HAMF;
-            this.btnHAMF.ImageHover = global::Sunny.UI.Demo.Properties.Resources.HAMF1;
+            this.btnHAMF.Image = global::ChiSaTo.Properties.Resources.HAMF;
+            this.btnHAMF.ImageHover = global::ChiSaTo.Properties.Resources.HAMF1;
             this.btnHAMF.Location = new System.Drawing.Point(582, 90);
             this.btnHAMF.Name = "btnHAMF";
             this.btnHAMF.Size = new System.Drawing.Size(160, 120);
@@ -96,8 +96,8 @@
             // 
             this.btnHAM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHAM.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnHAM.Image = global::Sunny.UI.Demo.Properties.Resources.HAM;
-            this.btnHAM.ImageHover = global::Sunny.UI.Demo.Properties.Resources.HAM1;
+            this.btnHAM.Image = global::ChiSaTo.Properties.Resources.HAM;
+            this.btnHAM.ImageHover = global::ChiSaTo.Properties.Resources.HAM1;
             this.btnHAM.Location = new System.Drawing.Point(398, 90);
             this.btnHAM.Name = "btnHAM";
             this.btnHAM.Size = new System.Drawing.Size(160, 120);
@@ -111,8 +111,8 @@
             // 
             this.btnAHM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAHM.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnAHM.Image = global::Sunny.UI.Demo.Properties.Resources.AHM;
-            this.btnAHM.ImageHover = global::Sunny.UI.Demo.Properties.Resources.AHM1;
+            this.btnAHM.Image = global::ChiSaTo.Properties.Resources.AHM;
+            this.btnAHM.ImageHover = global::ChiSaTo.Properties.Resources.AHM1;
             this.btnAHM.Location = new System.Drawing.Point(214, 234);
             this.btnAHM.Name = "btnAHM";
             this.btnAHM.Size = new System.Drawing.Size(160, 120);
@@ -126,8 +126,8 @@
             // 
             this.btnHMF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHMF.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnHMF.Image = global::Sunny.UI.Demo.Properties.Resources.HMF;
-            this.btnHMF.ImageHover = global::Sunny.UI.Demo.Properties.Resources.HMF1;
+            this.btnHMF.Image = global::ChiSaTo.Properties.Resources.HMF;
+            this.btnHMF.ImageHover = global::ChiSaTo.Properties.Resources.HMF1;
             this.btnHMF.Location = new System.Drawing.Point(214, 90);
             this.btnHMF.Name = "btnHMF";
             this.btnHMF.Size = new System.Drawing.Size(160, 120);
@@ -141,8 +141,8 @@
             // 
             this.btnHM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHM.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnHM.Image = global::Sunny.UI.Demo.Properties.Resources.HM;
-            this.btnHM.ImageHover = global::Sunny.UI.Demo.Properties.Resources.HM1;
+            this.btnHM.Image = global::ChiSaTo.Properties.Resources.HM;
+            this.btnHM.ImageHover = global::ChiSaTo.Properties.Resources.HM1;
             this.btnHM.Location = new System.Drawing.Point(30, 90);
             this.btnHM.Name = "btnHM";
             this.btnHM.Size = new System.Drawing.Size(160, 120);

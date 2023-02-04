@@ -1,4 +1,4 @@
-﻿using Sunny.UI.Demo.Properties;
+﻿using ChiSaTo.Properties;
 using System;
 using System.Drawing;
 

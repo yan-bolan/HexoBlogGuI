@@ -108,7 +108,7 @@ namespace Sunny.UI.Demo
             this.uiHeaderButton6.ForeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton6.ForePressColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton6.ForeSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.uiHeaderButton6.Image = global::Sunny.UI.Demo.Properties.Resources._7;
+            this.uiHeaderButton6.Image = global::ChiSaTo.Properties.Resources._7;
             this.uiHeaderButton6.IsScaled = false;
             this.uiHeaderButton6.Location = new System.Drawing.Point(600, 1);
             this.uiHeaderButton6.MinimumSize = new System.Drawing.Size(1, 1);
@@ -136,7 +136,7 @@ namespace Sunny.UI.Demo
             this.uiHeaderButton7.ForeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton7.ForePressColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton7.ForeSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.uiHeaderButton7.Image = global::Sunny.UI.Demo.Properties.Resources._5;
+            this.uiHeaderButton7.Image = global::ChiSaTo.Properties.Resources._5;
             this.uiHeaderButton7.IsScaled = false;
             this.uiHeaderButton7.Location = new System.Drawing.Point(500, 1);
             this.uiHeaderButton7.MinimumSize = new System.Drawing.Size(1, 1);
@@ -164,7 +164,7 @@ namespace Sunny.UI.Demo
             this.uiHeaderButton4.ForeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton4.ForePressColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton4.ForeSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.uiHeaderButton4.Image = global::Sunny.UI.Demo.Properties.Resources._4;
+            this.uiHeaderButton4.Image = global::ChiSaTo.Properties.Resources._4;
             this.uiHeaderButton4.IsScaled = false;
             this.uiHeaderButton4.Location = new System.Drawing.Point(400, 1);
             this.uiHeaderButton4.MinimumSize = new System.Drawing.Size(1, 1);
@@ -192,7 +192,7 @@ namespace Sunny.UI.Demo
             this.uiHeaderButton5.ForeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton5.ForePressColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton5.ForeSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.uiHeaderButton5.Image = global::Sunny.UI.Demo.Properties.Resources._3;
+            this.uiHeaderButton5.Image = global::ChiSaTo.Properties.Resources._3;
             this.uiHeaderButton5.IsScaled = false;
             this.uiHeaderButton5.Location = new System.Drawing.Point(300, 1);
             this.uiHeaderButton5.MinimumSize = new System.Drawing.Size(1, 1);
@@ -220,7 +220,7 @@ namespace Sunny.UI.Demo
             this.uiHeaderButton3.ForeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton3.ForePressColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton3.ForeSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.uiHeaderButton3.Image = global::Sunny.UI.Demo.Properties.Resources._2;
+            this.uiHeaderButton3.Image = global::ChiSaTo.Properties.Resources._2;
             this.uiHeaderButton3.IsScaled = false;
             this.uiHeaderButton3.Location = new System.Drawing.Point(200, 1);
             this.uiHeaderButton3.MinimumSize = new System.Drawing.Size(1, 1);
@@ -248,7 +248,7 @@ namespace Sunny.UI.Demo
             this.uiHeaderButton2.ForeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton2.ForePressColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.uiHeaderButton2.ForeSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.uiHeaderButton2.Image = global::Sunny.UI.Demo.Properties.Resources._1;
+            this.uiHeaderButton2.Image = global::ChiSaTo.Properties.Resources._1;
             this.uiHeaderButton2.IsScaled = false;
             this.uiHeaderButton2.Location = new System.Drawing.Point(100, 1);
             this.uiHeaderButton2.MinimumSize = new System.Drawing.Size(1, 1);

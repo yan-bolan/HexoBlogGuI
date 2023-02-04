@@ -121,7 +121,7 @@ namespace Sunny.UI.Demo
             // 
             this.uiSymbolButton26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiSymbolButton26.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSymbolButton26.Image = global::Sunny.UI.Demo.Properties.Resources.save;
+            this.uiSymbolButton26.Image = global::ChiSaTo.Properties.Resources.save;
             this.uiSymbolButton26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiSymbolButton26.Location = new System.Drawing.Point(486, 265);
             this.uiSymbolButton26.MinimumSize = new System.Drawing.Size(1, 1);
@@ -142,7 +142,7 @@ namespace Sunny.UI.Demo
             // 
             this.uiSymbolButton25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiSymbolButton25.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSymbolButton25.Image = global::Sunny.UI.Demo.Properties.Resources.relationship;
+            this.uiSymbolButton25.Image = global::ChiSaTo.Properties.Resources.relationship;
             this.uiSymbolButton25.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.uiSymbolButton25.Location = new System.Drawing.Point(600, 265);
             this.uiSymbolButton25.MinimumSize = new System.Drawing.Size(1, 1);
@@ -164,10 +164,10 @@ namespace Sunny.UI.Demo
             // 
             this.uiImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton4.Image = global::Sunny.UI.Demo.Properties.Resources.dashboard0;
-            this.uiImageButton4.ImageHover = global::Sunny.UI.Demo.Properties.Resources.dashboard;
+            this.uiImageButton4.Image = global::ChiSaTo.Properties.Resources.dashboard0;
+            this.uiImageButton4.ImageHover = global::ChiSaTo.Properties.Resources.dashboard;
             this.uiImageButton4.ImageOffset = new System.Drawing.Point(12, 5);
-            this.uiImageButton4.ImagePress = global::Sunny.UI.Demo.Properties.Resources.dashboard0;
+            this.uiImageButton4.ImagePress = global::ChiSaTo.Properties.Resources.dashboard0;
             this.uiImageButton4.Location = new System.Drawing.Point(630, 420);
             this.uiImageButton4.Name = "uiImageButton4";
             this.uiImageButton4.Size = new System.Drawing.Size(70, 61);
@@ -181,9 +181,9 @@ namespace Sunny.UI.Demo
             // 
             this.uiImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiImageButton3.Image = global::Sunny.UI.Demo.Properties.Resources.save0;
-            this.uiImageButton3.ImageHover = global::Sunny.UI.Demo.Properties.Resources.save;
-            this.uiImageButton3.ImagePress = global::Sunny.UI.Demo.Properties.Resources.save0;
+            this.uiImageButton3.Image = global::ChiSaTo.Properties.Resources.save0;
+            this.uiImageButton3.ImageHover = global::ChiSaTo.Properties.Resources.save;
+            this.uiImageButton3.ImagePress = global::ChiSaTo.Properties.Resources.save0;
             this.uiImageButton3.Location = new System.Drawing.Point(546, 423);
             this.uiImageButton3.Name = "uiImageButton3";
             this.uiImageButton3.Size = new System.Drawing.Size(43, 35);
@@ -196,9 +196,9 @@ namespace Sunny.UI.Demo
             // 
             this.uiImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiImageButton2.Image = global::Sunny.UI.Demo.Properties.Resources.relationship0;
-            this.uiImageButton2.ImageHover = global::Sunny.UI.Demo.Properties.Resources.relationship;
-            this.uiImageButton2.ImagePress = global::Sunny.UI.Demo.Properties.Resources.relationship0;
+            this.uiImageButton2.Image = global::ChiSaTo.Properties.Resources.relationship0;
+            this.uiImageButton2.ImageHover = global::ChiSaTo.Properties.Resources.relationship;
+            this.uiImageButton2.ImagePress = global::ChiSaTo.Properties.Resources.relationship0;
             this.uiImageButton2.Location = new System.Drawing.Point(495, 423);
             this.uiImageButton2.Name = "uiImageButton2";
             this.uiImageButton2.Size = new System.Drawing.Size(43, 35);
@@ -211,9 +211,9 @@ namespace Sunny.UI.Demo
             // 
             this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiImageButton1.Image = global::Sunny.UI.Demo.Properties.Resources.dashboard0;
-            this.uiImageButton1.ImageHover = global::Sunny.UI.Demo.Properties.Resources.dashboard;
-            this.uiImageButton1.ImagePress = global::Sunny.UI.Demo.Properties.Resources.dashboard0;
+            this.uiImageButton1.Image = global::ChiSaTo.Properties.Resources.dashboard0;
+            this.uiImageButton1.ImageHover = global::ChiSaTo.Properties.Resources.dashboard;
+            this.uiImageButton1.ImagePress = global::ChiSaTo.Properties.Resources.dashboard0;
             this.uiImageButton1.Location = new System.Drawing.Point(395, 423);
             this.uiImageButton1.Name = "uiImageButton1";
             this.uiImageButton1.Size = new System.Drawing.Size(94, 35);

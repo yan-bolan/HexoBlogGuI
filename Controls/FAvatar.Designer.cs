@@ -196,7 +196,7 @@ namespace Sunny.UI.Demo
             this.uiAvatar2.AvatarSize = 55;
             this.uiAvatar2.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiAvatar2.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
-            this.uiAvatar2.Image = global::Sunny.UI.Demo.Properties.Resources.SunnyUISmall;
+            this.uiAvatar2.Image = global::ChiSaTo.Properties.Resources.SunnyUISmall;
             this.uiAvatar2.Location = new System.Drawing.Point(30, 85);
             this.uiAvatar2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar2.Name = "uiAvatar2";
@@ -269,7 +269,7 @@ namespace Sunny.UI.Demo
             // uiGifAvatar1
             // 
             this.uiGifAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiGifAvatar1.Image = global::Sunny.UI.Demo.Properties.Resources.Tom;
+            this.uiGifAvatar1.Image = global::ChiSaTo.Properties.Resources.Tom;
             this.uiGifAvatar1.Location = new System.Drawing.Point(30, 340);
             this.uiGifAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiGifAvatar1.Name = "uiGifAvatar1";

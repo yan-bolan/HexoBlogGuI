@@ -18,7 +18,7 @@ namespace Sunny.UI.Demo
             uiAnalogMeter1.Value = value;
         }
 
-        Timer timer = new Timer();
+        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         private int value;
 
         public override void Init()
