@@ -71,5 +71,21 @@ using Sunny.UI; namespace ChiSaTo
             //传值给框架
             SendParamToFrame("传值给框架");
         }
+
+         
+
+        private void open_dir_buttion_Click(object sender, EventArgs e)
+        {
+            var bm = new Blog_Main();
+
+            bm.main(Enum_Blog.open_dir, "");
+        }
+
+        private void Button_new_post_Click(object sender, EventArgs e)
+        {
+            var bm = new Blog_Main();
+
+            bm.main(Enum_Blog.New_Post, post_title_input_box.Text.Trim());
+        }
     }
 }

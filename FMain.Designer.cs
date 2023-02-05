@@ -57,11 +57,13 @@ namespace ChiSaTo
             this.Aside.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.Aside.ScrollBarHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.Aside.ScrollBarPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.Aside.SelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.Aside.SelectedHighColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
             this.Aside.ShowOneNode = true;
             this.Aside.ShowSecondBackColor = true;
             this.Aside.ShowTips = true;
             this.Aside.Size = new System.Drawing.Size(250, 572);
-            this.Aside.Style = Sunny.UI.UIStyle.Custom;
+            this.Aside.Style = Sunny.UI.UIStyle.Orange;
             // 
             // Header
             // 
@@ -86,21 +88,25 @@ namespace ChiSaTo
             treeNode4,
             treeNode5});
             this.Header.NodeSize = new System.Drawing.Size(110, 45);
+            this.Header.SelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.Header.SelectedHighColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
             this.Header.SelectedIndex = 0;
             this.Header.Size = new System.Drawing.Size(1020, 110);
-            this.Header.Style = Sunny.UI.UIStyle.Custom;
+            this.Header.Style = Sunny.UI.UIStyle.Orange;
             this.Header.MenuItemClick += new Sunny.UI.UINavBar.OnMenuItemClick(this.Header_MenuItemClick);
             // 
             // uiAvatar
             // 
             this.uiAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.uiAvatar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiAvatar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
             this.uiAvatar.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
             this.uiAvatar.Image = global::ChiSaTo.Properties.Resources.avtarhutao;
             this.uiAvatar.Location = new System.Drawing.Point(939, 25);
             this.uiAvatar.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar.Name = "uiAvatar";
             this.uiAvatar.Size = new System.Drawing.Size(66, 70);
+            this.uiAvatar.Style = Sunny.UI.UIStyle.Orange;
             this.uiAvatar.TabIndex = 4;
             this.uiAvatar.Text = "uiAvatar1";
             this.uiAvatar.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -149,16 +155,20 @@ namespace ChiSaTo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1024, 720);
+            this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
             this.ExtendBox = true;
             this.ExtendMenu = this.uiContextMenuStrip1;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 720);
             this.Name = "FMain";
             this.Padding = new System.Windows.Forms.Padding(2, 36, 2, 2);
+            this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
             this.ShowDragStretch = true;
             this.ShowRadius = false;
             this.ShowShadow = true;
+            this.Style = Sunny.UI.UIStyle.Orange;
             this.Text = "博客";
+            this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 1024, 720);
             this.Selecting += new Sunny.UI.UIMainFrame.OnSelecting(this.FMain_Selecting);
             this.HotKeyEventHandler += new Sunny.UI.HotKeyEventHandler(this.FMain_HotKeyEventHandler);
