@@ -1,5 +1,7 @@
 ﻿using System;
-
+using System.Diagnostics;
+using System.Windows.Forms;
+using Sharprompt;
 using Sunny.UI; namespace ChiSaTo
 {
     public partial class FButton : UIPage
@@ -8,9 +10,9 @@ using Sunny.UI; namespace ChiSaTo
         {
             InitializeComponent();
             uiToolTip1.SetToolTip(uiButton1, uiButton1.Text);
-            uiToolTip1.SetToolTip(uiSymbolButton1, uiSymbolButton1.Text, "SunnyUI");
-            uiToolTip1.SetToolTip(uiSymbolButton2, uiSymbolButton2.Text, "SunnyUI",
-                uiSymbolButton2.Symbol, 32, UIColor.Red);
+            //uiToolTip1.SetToolTip(uiSymbolButton1, uiSymbolButton1.Text, "SunnyUI");
+            //uiToolTip1.SetToolTip(uiSymbolButton2, uiSymbolButton2.Text, "SunnyUI",
+            //    uiSymbolButton2.Symbol, 32, UIColor.Red);
         }
 
         /// <summary>
@@ -36,8 +38,26 @@ using Sunny.UI; namespace ChiSaTo
         public override void Init()
         {
             base.Init();
-            uiSwitch1.Active = uiSwitch4.Active = true;
-            uiSwitch2.Active = uiSwitch3.Active = false;
+            //uiSwitch1.Active = uiSwitch4.Active = true;
+            //uiSwitch2.Active = uiSwitch3.Active = false;
+
+            FlowLayoutPanel_Recent.Clear();
+            var bm = new Blog_Main();
+            var  md_file_latest = bm.GetLatestFiles(bm.Base_post_addr, 20).Select(x => Path.GetFileName(x)).ToList();
+            foreach (var item in md_file_latest)
+            {
+                var link = new UILinkLabel();
+                link.SetDPIScale();
+                link.Text = item;
+                link.Name = link.Text;
+                link.Click += (object sender, System.EventArgs e) => {
+                    var file_name = (UILinkLabel)sender;
+                    Process.Start("explorer.exe", Path.Combine(bm.Base_post_addr, file_name.Text));
+                };
+
+                //建议用封装的方法Add
+                FlowLayoutPanel_Recent.Add(link);
+            }
 
             Console.WriteLine("2. FButton_Init");
         }
@@ -51,7 +71,7 @@ using Sunny.UI; namespace ChiSaTo
 
         private void uiSwitch1_ValueChanged(object sender, bool value)
         {
-            Console.WriteLine(uiSwitch1.Active);
+            //Console.WriteLine(uiSwitch1.Active);
         }
 
         private void uiSymbolButton25_Click(object sender, EventArgs e)
@@ -78,7 +98,7 @@ using Sunny.UI; namespace ChiSaTo
         {
             var bm = new Blog_Main();
 
-            bm.main(Enum_Blog.open_dir, "");
+            bm.main(Enum_Blog.open_dir, "" );
         }
 
         private void Button_new_post_Click(object sender, EventArgs e)
@@ -86,6 +106,45 @@ using Sunny.UI; namespace ChiSaTo
             var bm = new Blog_Main();
 
             bm.main(Enum_Blog.New_Post, post_title_input_box.Text.Trim());
+        }
+
+        private void uiButton_Commit_Click(object sender, EventArgs e)
+        {
+            var bm = new Blog_Main();
+            var   message = uiTextBox_commit_msg.Text.Trim();
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                string command = $"hexo g & git add . & git commit -a -m \"{message}\"  & exit";
+                Process process = new Process();
+                process.StartInfo.WorkingDirectory = bm.Base_addr;
+                process.StartInfo.FileName = "CMD.exe";
+                process.StartInfo.Arguments = " /k " + command;
+                process.Start();
+                process.WaitForExit();
+
+            }
+             
+            Console.WriteLine("Good Bye !");
+
+        }
+
+        private void uiButton_Push_Click(object sender, EventArgs e)
+        {
+            var bm = new Blog_Main();
+            var message = uiTextBox_commit_msg.Text.Trim();
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                string command = $"hexo g & git add . & git commit -a -m \"{message}\" & git push & exit";
+                Process process = new Process();
+                process.StartInfo.WorkingDirectory = bm.Base_addr;
+                process.StartInfo.FileName = "CMD.exe";
+                process.StartInfo.Arguments = " /k " + command;
+                process.Start();
+                process.WaitForExit();
+
+            }
+
+            Console.WriteLine("Good Bye !");
         }
     }
 }

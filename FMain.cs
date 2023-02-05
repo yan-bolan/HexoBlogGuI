@@ -12,7 +12,7 @@ namespace ChiSaTo
             int pageIndex = 1000;
             Header.SetNodePageIndex(Header.Nodes[0], pageIndex);
             Header.SetNodeSymbol(Header.Nodes[0], 61451);
-            TreeNode parent = Aside.CreateNode("控件", 61451, 24, pageIndex);
+            TreeNode parent = Aside.CreateNode("主页", 61451, 24, pageIndex);
             //通过设置PageIndex关联，节点文字、图标由相应的Page的Text、Symbol提供
             Aside.CreateChildNode(parent, AddPage(new FAvatar(), ++pageIndex));
             Aside.CreateChildNode(parent, AddPage(new FButton(), ++pageIndex));
