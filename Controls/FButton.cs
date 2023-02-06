@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using Sharprompt;
 using Sunny.UI; namespace ChiSaTo
 {
     public partial class FButton : UIPage
@@ -41,6 +40,7 @@ using Sunny.UI; namespace ChiSaTo
             //uiSwitch1.Active = uiSwitch4.Active = true;
             //uiSwitch2.Active = uiSwitch3.Active = false;
 
+            LinkLabel_BLOG_PATH.Text = Settings1.Default.BlogCateLog;
             FlowLayoutPanel_Recent.Clear();
             var bm = new Blog_Main();
             var  md_file_latest = bm.GetLatestFiles(bm.Base_post_addr, 20).Select(x => Path.GetFileName(x)).ToList();
@@ -145,6 +145,20 @@ using Sunny.UI; namespace ChiSaTo
             }
 
             Console.WriteLine("Good Bye !");
+        }
+ 
+
+        private void Button_open_folder_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            dialog.Description = "请选择文件路径";
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                Settings1.Default.BlogCateLog = dialog.SelectedPath;
+                Settings1.Default.Save();
+                LinkLabel_BLOG_PATH.Text = Settings1.Default.BlogCateLog;
+            }
         }
     }
 }

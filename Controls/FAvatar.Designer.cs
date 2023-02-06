@@ -56,7 +56,7 @@ namespace ChiSaTo
             // uiLabel5
             // 
             this.uiLabel5.AutoSize = true;
-            this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiLabel5.Location = new System.Drawing.Point(181, 257);
             this.uiLabel5.Name = "uiLabel5";
             this.uiLabel5.Size = new System.Drawing.Size(42, 21);
@@ -68,7 +68,7 @@ namespace ChiSaTo
             // uiLabel6
             // 
             this.uiLabel6.AutoSize = true;
-            this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiLabel6.Location = new System.Drawing.Point(109, 257);
             this.uiLabel6.Name = "uiLabel6";
             this.uiLabel6.Size = new System.Drawing.Size(42, 21);
@@ -80,7 +80,7 @@ namespace ChiSaTo
             // uiAvatar5
             // 
             this.uiAvatar5.AvatarSize = 55;
-            this.uiAvatar5.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiAvatar5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiAvatar5.Icon = Sunny.UI.UIAvatar.UIIcon.Text;
             this.uiAvatar5.Location = new System.Drawing.Point(174, 190);
             this.uiAvatar5.MinimumSize = new System.Drawing.Size(1, 1);
@@ -94,7 +94,7 @@ namespace ChiSaTo
             // uiAvatar6
             // 
             this.uiAvatar6.AvatarSize = 55;
-            this.uiAvatar6.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiAvatar6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiAvatar6.Location = new System.Drawing.Point(102, 190);
             this.uiAvatar6.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar6.Name = "uiAvatar6";
@@ -107,7 +107,7 @@ namespace ChiSaTo
             // 
             // uiLine1
             // 
-            this.uiLine1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLine1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiLine1.Location = new System.Drawing.Point(30, 55);
             this.uiLine1.MinimumSize = new System.Drawing.Size(16, 16);
             this.uiLine1.Name = "uiLine1";
@@ -120,7 +120,7 @@ namespace ChiSaTo
             // uiLabel4
             // 
             this.uiLabel4.AutoSize = true;
-            this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiLabel4.Location = new System.Drawing.Point(355, 152);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(74, 21);
@@ -132,7 +132,7 @@ namespace ChiSaTo
             // uiLabel3
             // 
             this.uiLabel3.AutoSize = true;
-            this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiLabel3.Location = new System.Drawing.Point(183, 152);
             this.uiLabel3.Name = "uiLabel3";
             this.uiLabel3.Size = new System.Drawing.Size(42, 21);
@@ -144,7 +144,7 @@ namespace ChiSaTo
             // uiLabel2
             // 
             this.uiLabel2.AutoSize = true;
-            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiLabel2.Location = new System.Drawing.Point(111, 152);
             this.uiLabel2.Name = "uiLabel2";
             this.uiLabel2.Size = new System.Drawing.Size(42, 21);
@@ -156,7 +156,7 @@ namespace ChiSaTo
             // uiLabel1
             // 
             this.uiLabel1.AutoSize = true;
-            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiLabel1.Location = new System.Drawing.Point(39, 152);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(42, 21);
@@ -168,7 +168,7 @@ namespace ChiSaTo
             // uiAvatar4
             // 
             this.uiAvatar4.AvatarSize = 55;
-            this.uiAvatar4.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiAvatar4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiAvatar4.Location = new System.Drawing.Point(362, 85);
             this.uiAvatar4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar4.Name = "uiAvatar4";
@@ -182,7 +182,7 @@ namespace ChiSaTo
             // uiAvatar3
             // 
             this.uiAvatar3.AvatarSize = 55;
-            this.uiAvatar3.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiAvatar3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiAvatar3.Icon = Sunny.UI.UIAvatar.UIIcon.Text;
             this.uiAvatar3.Location = new System.Drawing.Point(174, 85);
             this.uiAvatar3.MinimumSize = new System.Drawing.Size(1, 1);
@@ -195,7 +195,7 @@ namespace ChiSaTo
             // uiAvatar2
             // 
             this.uiAvatar2.AvatarSize = 55;
-            this.uiAvatar2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiAvatar2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiAvatar2.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
             this.uiAvatar2.Image = global::ChiSaTo.Properties.Resources.SunnyUISmall;
             this.uiAvatar2.Location = new System.Drawing.Point(30, 85);
@@ -209,7 +209,7 @@ namespace ChiSaTo
             // uiAvatar1
             // 
             this.uiAvatar1.AvatarSize = 55;
-            this.uiAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiAvatar1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiAvatar1.Location = new System.Drawing.Point(102, 85);
             this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar1.Name = "uiAvatar1";
@@ -222,7 +222,7 @@ namespace ChiSaTo
             // uiContextMenuStrip1
             // 
             this.uiContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.uiContextMenuStrip1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiContextMenuStrip1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.设置ToolStripMenuItem,
             this.更改密码ToolStripMenuItem,
@@ -257,7 +257,7 @@ namespace ChiSaTo
             // 
             // uiLine2
             // 
-            this.uiLine2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLine2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiLine2.Location = new System.Drawing.Point(30, 307);
             this.uiLine2.MinimumSize = new System.Drawing.Size(16, 16);
             this.uiLine2.Name = "uiLine2";
@@ -269,7 +269,7 @@ namespace ChiSaTo
             // 
             // uiGifAvatar1
             // 
-            this.uiGifAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiGifAvatar1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.uiGifAvatar1.Image = global::ChiSaTo.Properties.Resources.Tom;
             this.uiGifAvatar1.Location = new System.Drawing.Point(30, 340);
             this.uiGifAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
@@ -283,7 +283,7 @@ namespace ChiSaTo
             // 
             this.AllowShowTitle = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(800, 489);
+            this.ClientSize = new System.Drawing.Size(1282, 453);
             this.Controls.Add(this.uiGifAvatar1);
             this.Controls.Add(this.uiLine2);
             this.Controls.Add(this.uiLabel5);

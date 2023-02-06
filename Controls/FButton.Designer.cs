@@ -30,8 +30,6 @@ using Sunny.UI; namespace ChiSaTo
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.uiSymbolButton26 = new Sunny.UI.UISymbolButton();
-            this.uiImageButton3 = new Sunny.UI.UIImageButton();
             this.uiLine5 = new Sunny.UI.UILine();
             this.uiLine4 = new Sunny.UI.UILine();
             this.uiSymbolButton24 = new Sunny.UI.UISymbolButton();
@@ -50,10 +48,8 @@ using Sunny.UI; namespace ChiSaTo
             this.uiSymbolButton8 = new Sunny.UI.UISymbolButton();
             this.uiSymbolButton9 = new Sunny.UI.UISymbolButton();
             this.uiSymbolButton10 = new Sunny.UI.UISymbolButton();
-            this.uiSymbolButton11 = new Sunny.UI.UISymbolButton();
+            this.Button_open_folder = new Sunny.UI.UISymbolButton();
             this.uiSymbolButton12 = new Sunny.UI.UISymbolButton();
-            this.uiSymbolButton6 = new Sunny.UI.UISymbolButton();
-            this.uiSymbolButton5 = new Sunny.UI.UISymbolButton();
             this.uiLine2 = new Sunny.UI.UILine();
             this.uiLine1 = new Sunny.UI.UILine();
             this.uiButton_Commit = new Sunny.UI.UIButton();
@@ -66,50 +62,15 @@ using Sunny.UI; namespace ChiSaTo
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiToolTip1 = new Sunny.UI.UIToolTip(this.components);
             this.post_title_input_box = new Sunny.UI.UITextBox();
+            this.uiTextBox_commit_msg = new Sunny.UI.UITextBox();
             this.uiSwitch6 = new Sunny.UI.UISwitch();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiLine3 = new Sunny.UI.UILine();
             this.FlowLayoutPanel_Recent = new Sunny.UI.UIFlowLayoutPanel();
             this.uiLabel2 = new Sunny.UI.UILabel();
-            this.uiTextBox_commit_msg = new Sunny.UI.UITextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.uiImageButton3)).BeginInit();
+            this.uiLabel3 = new Sunny.UI.UILabel();
+            this.LinkLabel_BLOG_PATH = new Sunny.UI.UILinkLabel();
             this.SuspendLayout();
-            // 
-            // uiSymbolButton26
-            // 
-            this.uiSymbolButton26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton26.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiSymbolButton26.Image = global::ChiSaTo.Properties.Resources.save;
-            this.uiSymbolButton26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiSymbolButton26.Location = new System.Drawing.Point(486, 521);
-            this.uiSymbolButton26.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton26.Name = "uiSymbolButton26";
-            this.uiSymbolButton26.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
-            this.uiSymbolButton26.Size = new System.Drawing.Size(100, 35);
-            this.uiSymbolButton26.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolButton26.StyleCustomMode = true;
-            this.uiSymbolButton26.Symbol = 61530;
-            this.uiSymbolButton26.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.uiSymbolButton26.TabIndex = 113;
-            this.uiSymbolButton26.Text = "Save";
-            this.uiSymbolButton26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.uiSymbolButton26.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiImageButton3
-            // 
-            this.uiImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiImageButton3.Image = global::ChiSaTo.Properties.Resources.save0;
-            this.uiImageButton3.ImageHover = global::ChiSaTo.Properties.Resources.save;
-            this.uiImageButton3.ImagePress = global::ChiSaTo.Properties.Resources.save0;
-            this.uiImageButton3.Location = new System.Drawing.Point(555, 471);
-            this.uiImageButton3.Name = "uiImageButton3";
-            this.uiImageButton3.Size = new System.Drawing.Size(43, 35);
-            this.uiImageButton3.Style = Sunny.UI.UIStyle.Orange;
-            this.uiImageButton3.TabIndex = 110;
-            this.uiImageButton3.TabStop = false;
-            this.uiImageButton3.Text = null;
-            this.uiImageButton3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLine5
             // 
@@ -123,7 +84,7 @@ using Sunny.UI; namespace ChiSaTo
             this.uiLine5.Size = new System.Drawing.Size(312, 20);
             this.uiLine5.Style = Sunny.UI.UIStyle.Orange;
             this.uiLine5.TabIndex = 107;
-            this.uiLine5.Text = "UIImageButton";
+            this.uiLine5.Text = "Settings";
             this.uiLine5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLine5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
@@ -515,31 +476,32 @@ using Sunny.UI; namespace ChiSaTo
             this.uiSymbolButton10.TabIndex = 87;
             this.uiSymbolButton10.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // uiSymbolButton11
+            // Button_open_folder
             // 
-            this.uiSymbolButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton11.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton11.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.uiSymbolButton11.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton11.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton11.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiSymbolButton11.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.uiSymbolButton11.IsCircle = true;
-            this.uiSymbolButton11.Location = new System.Drawing.Point(71, 521);
-            this.uiSymbolButton11.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton11.Name = "uiSymbolButton11";
-            this.uiSymbolButton11.Padding = new System.Windows.Forms.Padding(7, 10, 0, 0);
-            this.uiSymbolButton11.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton11.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.uiSymbolButton11.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton11.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton11.Size = new System.Drawing.Size(35, 35);
-            this.uiSymbolButton11.Style = Sunny.UI.UIStyle.Red;
-            this.uiSymbolButton11.StyleCustomMode = true;
-            this.uiSymbolButton11.Symbol = 61508;
-            this.uiSymbolButton11.TabIndex = 86;
-            this.uiSymbolButton11.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.Button_open_folder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_open_folder.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.Button_open_folder.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.Button_open_folder.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.Button_open_folder.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Button_open_folder.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Button_open_folder.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Button_open_folder.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Button_open_folder.IsCircle = true;
+            this.Button_open_folder.Location = new System.Drawing.Point(554, 471);
+            this.Button_open_folder.MinimumSize = new System.Drawing.Size(1, 1);
+            this.Button_open_folder.Name = "Button_open_folder";
+            this.Button_open_folder.Padding = new System.Windows.Forms.Padding(7, 10, 0, 0);
+            this.Button_open_folder.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.Button_open_folder.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.Button_open_folder.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Button_open_folder.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Button_open_folder.Size = new System.Drawing.Size(35, 35);
+            this.Button_open_folder.Style = Sunny.UI.UIStyle.Red;
+            this.Button_open_folder.StyleCustomMode = true;
+            this.Button_open_folder.Symbol = 61508;
+            this.Button_open_folder.TabIndex = 86;
+            this.Button_open_folder.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.Button_open_folder.Click += new System.EventHandler(this.Button_open_folder_Click);
             // 
             // uiSymbolButton12
             // 
@@ -560,54 +522,6 @@ using Sunny.UI; namespace ChiSaTo
             this.uiSymbolButton12.SymbolSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(131)))), ((int)(((byte)(229)))));
             this.uiSymbolButton12.TabIndex = 85;
             this.uiSymbolButton12.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiSymbolButton6
-            // 
-            this.uiSymbolButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton6.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.uiSymbolButton6.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton6.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiSymbolButton6.Location = new System.Drawing.Point(589, 521);
-            this.uiSymbolButton6.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton6.Name = "uiSymbolButton6";
-            this.uiSymbolButton6.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.uiSymbolButton6.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.uiSymbolButton6.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton6.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uiSymbolButton6.Size = new System.Drawing.Size(100, 35);
-            this.uiSymbolButton6.Style = Sunny.UI.UIStyle.Red;
-            this.uiSymbolButton6.StyleCustomMode = true;
-            this.uiSymbolButton6.Symbol = 61532;
-            this.uiSymbolButton6.TabIndex = 84;
-            this.uiSymbolButton6.Text = "Error";
-            this.uiSymbolButton6.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiSymbolButton5
-            // 
-            this.uiSymbolButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiSymbolButton5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiSymbolButton5.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.uiSymbolButton5.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.uiSymbolButton5.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.uiSymbolButton5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiSymbolButton5.Location = new System.Drawing.Point(415, 471);
-            this.uiSymbolButton5.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton5.Name = "uiSymbolButton5";
-            this.uiSymbolButton5.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiSymbolButton5.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.uiSymbolButton5.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.uiSymbolButton5.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.uiSymbolButton5.Size = new System.Drawing.Size(100, 35);
-            this.uiSymbolButton5.Style = Sunny.UI.UIStyle.Orange;
-            this.uiSymbolButton5.StyleCustomMode = true;
-            this.uiSymbolButton5.Symbol = 61553;
-            this.uiSymbolButton5.TabIndex = 83;
-            this.uiSymbolButton5.Text = "Warn";
-            this.uiSymbolButton5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLine2
             // 
@@ -854,6 +768,33 @@ using Sunny.UI; namespace ChiSaTo
             this.post_title_input_box.Watermark = "输入标题";
             this.post_title_input_box.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
+            // uiTextBox_commit_msg
+            // 
+            this.uiTextBox_commit_msg.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.uiTextBox_commit_msg.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
+            this.uiTextBox_commit_msg.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
+            this.uiTextBox_commit_msg.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.uiTextBox_commit_msg.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
+            this.uiTextBox_commit_msg.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
+            this.uiTextBox_commit_msg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox_commit_msg.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            this.uiTextBox_commit_msg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiTextBox_commit_msg.Location = new System.Drawing.Point(119, 378);
+            this.uiTextBox_commit_msg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox_commit_msg.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox_commit_msg.Name = "uiTextBox_commit_msg";
+            this.uiTextBox_commit_msg.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.uiTextBox_commit_msg.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.uiTextBox_commit_msg.ShowButton = true;
+            this.uiTextBox_commit_msg.ShowText = false;
+            this.uiTextBox_commit_msg.Size = new System.Drawing.Size(221, 29);
+            this.uiTextBox_commit_msg.Style = Sunny.UI.UIStyle.Orange;
+            this.uiTextBox_commit_msg.TabIndex = 122;
+            this.uiTextBox_commit_msg.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiToolTip1.SetToolTip(this.uiTextBox_commit_msg, "Hello world!");
+            this.uiTextBox_commit_msg.Watermark = "Input Commit Message";
+            this.uiTextBox_commit_msg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
             // uiSwitch6
             // 
             this.uiSwitch6.Active = true;
@@ -933,39 +874,42 @@ using Sunny.UI; namespace ChiSaTo
             this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // uiTextBox_commit_msg
+            // uiLabel3
             // 
-            this.uiTextBox_commit_msg.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiTextBox_commit_msg.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.uiTextBox_commit_msg.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.uiTextBox_commit_msg.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiTextBox_commit_msg.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.uiTextBox_commit_msg.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.uiTextBox_commit_msg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox_commit_msg.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.uiTextBox_commit_msg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiTextBox_commit_msg.Location = new System.Drawing.Point(119, 378);
-            this.uiTextBox_commit_msg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox_commit_msg.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox_commit_msg.Name = "uiTextBox_commit_msg";
-            this.uiTextBox_commit_msg.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiTextBox_commit_msg.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiTextBox_commit_msg.ShowButton = true;
-            this.uiTextBox_commit_msg.ShowText = false;
-            this.uiTextBox_commit_msg.Size = new System.Drawing.Size(221, 29);
-            this.uiTextBox_commit_msg.Style = Sunny.UI.UIStyle.Orange;
-            this.uiTextBox_commit_msg.TabIndex = 122;
-            this.uiTextBox_commit_msg.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiToolTip1.SetToolTip(this.uiTextBox_commit_msg, "Hello world!");
-            this.uiTextBox_commit_msg.Watermark = "Input Commit Message";
-            this.uiTextBox_commit_msg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.uiLabel3.Location = new System.Drawing.Point(420, 471);
+            this.uiLabel3.Name = "uiLabel3";
+            this.uiLabel3.Size = new System.Drawing.Size(123, 35);
+            this.uiLabel3.Style = Sunny.UI.UIStyle.Orange;
+            this.uiLabel3.TabIndex = 123;
+            this.uiLabel3.Text = "Home Dirctory:";
+            this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // LinkLabel_BLOG_PATH
+            // 
+            this.LinkLabel_BLOG_PATH.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.LinkLabel_BLOG_PATH.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LinkLabel_BLOG_PATH.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.LinkLabel_BLOG_PATH.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.LinkLabel_BLOG_PATH.Location = new System.Drawing.Point(420, 527);
+            this.LinkLabel_BLOG_PATH.Name = "LinkLabel_BLOG_PATH";
+            this.LinkLabel_BLOG_PATH.Size = new System.Drawing.Size(283, 29);
+            this.LinkLabel_BLOG_PATH.Style = Sunny.UI.UIStyle.Orange;
+            this.LinkLabel_BLOG_PATH.TabIndex = 124;
+            this.LinkLabel_BLOG_PATH.TabStop = true;
+            this.LinkLabel_BLOG_PATH.Text = "D:\\";
+            this.LinkLabel_BLOG_PATH.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.LinkLabel_BLOG_PATH.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // FButton
             // 
             this.AllowShowTitle = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1282, 602);
+            this.ClientSize = new System.Drawing.Size(1568, 585);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
+            this.Controls.Add(this.LinkLabel_BLOG_PATH);
+            this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.uiLabel2);
             this.Controls.Add(this.uiTextBox_commit_msg);
             this.Controls.Add(this.FlowLayoutPanel_Recent);
@@ -973,8 +917,6 @@ using Sunny.UI; namespace ChiSaTo
             this.Controls.Add(this.post_title_input_box);
             this.Controls.Add(this.uiSymbolButton24);
             this.Controls.Add(this.uiSwitch6);
-            this.Controls.Add(this.uiSymbolButton26);
-            this.Controls.Add(this.uiImageButton3);
             this.Controls.Add(this.uiLine5);
             this.Controls.Add(this.uiLine4);
             this.Controls.Add(this.uiSymbolButton23);
@@ -993,10 +935,8 @@ using Sunny.UI; namespace ChiSaTo
             this.Controls.Add(this.uiSymbolButton8);
             this.Controls.Add(this.uiSymbolButton9);
             this.Controls.Add(this.uiSymbolButton10);
-            this.Controls.Add(this.uiSymbolButton11);
+            this.Controls.Add(this.Button_open_folder);
             this.Controls.Add(this.uiSymbolButton12);
-            this.Controls.Add(this.uiSymbolButton6);
-            this.Controls.Add(this.uiSymbolButton5);
             this.Controls.Add(this.uiLine2);
             this.Controls.Add(this.uiLine1);
             this.Controls.Add(this.uiButton_Commit);
@@ -1015,15 +955,12 @@ using Sunny.UI; namespace ChiSaTo
             this.Symbol = 61640;
             this.Text = "Blog";
             this.Load += new System.EventHandler(this.FButton_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.uiImageButton3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private UISymbolButton uiSymbolButton26;
-        private UIImageButton uiImageButton3;
         private UILine uiLine5;
         private UILine uiLine4;
         private UISymbolButton uiSymbolButton24;
@@ -1042,10 +979,8 @@ using Sunny.UI; namespace ChiSaTo
         private UISymbolButton uiSymbolButton8;
         private UISymbolButton uiSymbolButton9;
         private UISymbolButton uiSymbolButton10;
-        private UISymbolButton uiSymbolButton11;
+        private UISymbolButton Button_open_folder;
         private UISymbolButton uiSymbolButton12;
-        private UISymbolButton uiSymbolButton6;
-        private UISymbolButton uiSymbolButton5;
         private UILine uiLine2;
         private UILine uiLine1;
         private UIButton uiButton_Commit;
@@ -1064,5 +999,7 @@ using Sunny.UI; namespace ChiSaTo
         private UIFlowLayoutPanel FlowLayoutPanel_Recent;
         private UILabel uiLabel2;
         private UITextBox uiTextBox_commit_msg;
+        private UILabel uiLabel3;
+        private UILinkLabel LinkLabel_BLOG_PATH;
     }
 }
