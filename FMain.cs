@@ -9,6 +9,7 @@ namespace ChiSaTo
         public FMain()
         {
             InitializeComponent();
+            StyleManager.Style = UIStyle.Orange;// 主页面管理总样式，设置为橙色
             int pageIndex = 1000;
             Header.SetNodePageIndex(Header.Nodes[0], pageIndex);
             Header.SetNodeSymbol(Header.Nodes[0], 61451);

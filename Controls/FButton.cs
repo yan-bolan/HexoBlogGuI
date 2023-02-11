@@ -110,6 +110,7 @@ using Sunny.UI; namespace ChiSaTo
 
         private void uiButton_Commit_Click(object sender, EventArgs e)
         {
+           
             var bm = new Blog_Main();
             var   message = uiTextBox_commit_msg.Text.Trim();
             if (!string.IsNullOrWhiteSpace(message))
@@ -122,6 +123,10 @@ using Sunny.UI; namespace ChiSaTo
                 process.Start();
                 process.WaitForExit();
 
+            }
+            else
+            {
+                ShowErrorTip("请输入提交信息！");
             }
              
             Console.WriteLine("Good Bye !");
@@ -143,6 +148,10 @@ using Sunny.UI; namespace ChiSaTo
                 process.WaitForExit();
 
             }
+            else
+            {
+                ShowErrorTip("请输入提交信息！");
+            }
 
             Console.WriteLine("Good Bye !");
         }
@@ -159,6 +168,18 @@ using Sunny.UI; namespace ChiSaTo
                 Settings1.Default.Save();
                 LinkLabel_BLOG_PATH.Text = Settings1.Default.BlogCateLog;
             }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            HeaderEdit frm = new HeaderEdit();
+                frm.Render();
+                frm.ShowDialog();
+                if (frm.IsOK)
+                {
+                    ShowSuccessDialog(frm.Person.ToString());
+                }
+                frm.Dispose();
         }
     }
 }

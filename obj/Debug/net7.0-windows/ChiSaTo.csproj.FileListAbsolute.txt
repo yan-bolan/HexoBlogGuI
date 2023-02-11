@@ -1,5 +1,7 @@
+D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\hutao.ico
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\appsettings.json
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\ChiSaTo.exe
+D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\ChiSaTo.dll.config
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\ChiSaTo.deps.json
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\ChiSaTo.runtimeconfig.json
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\ChiSaTo.dll
@@ -58,6 +60,7 @@ D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.FHea
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.FHeaderAsideMainFooter.resources
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.FHeaderMain.resources
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.FHeaderMainFooter.resources
+D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.HeaderEdit.resources
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.FPage1.resources
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.FPage2.resources
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.FPage3.resources
@@ -81,5 +84,4 @@ D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\refint\ChiSa
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.pdb
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.genruntimeconfig.cache
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ref\ChiSaTo.dll
-D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\hutao.ico
-D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\ChiSaTo.dll.config
+D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\YamlDotNet.dll

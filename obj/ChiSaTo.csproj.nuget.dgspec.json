@@ -64,6 +64,10 @@
             "SunnyUI": {
               "target": "Package",
               "version": "[3.3.1, )"
+            },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[13.0.0, )"
             }
           },
           "imports": [

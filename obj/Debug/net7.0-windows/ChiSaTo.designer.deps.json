@@ -163,6 +163,14 @@
             "fileVersion": "7.0.22.51805"
           }
         }
+      },
+      "YamlDotNet/13.0.0": {
+        "runtime": {
+          "lib/net7.0/YamlDotNet.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.0.0"
+          }
+        }
       }
     }
   },
@@ -264,6 +272,13 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "YamlDotNet/13.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4ZNUK9nl6i8DHPbjmJR23OJvCvesgTJoDuILy0bpN2HeYROpKa4bDy8QvXXPcPnmes573IS9FGFUqpZgKeFLGA==",
+      "path": "yamldotnet/13.0.0",
+      "hashPath": "yamldotnet.13.0.0.nupkg.sha512"
     }
   }
 }

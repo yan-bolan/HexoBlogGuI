@@ -70,6 +70,7 @@ using Sunny.UI; namespace ChiSaTo
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.LinkLabel_BLOG_PATH = new Sunny.UI.UILinkLabel();
+            this.btnAdd = new Sunny.UI.UISymbolButton();
             this.SuspendLayout();
             // 
             // uiLine5
@@ -902,12 +903,38 @@ using Sunny.UI; namespace ChiSaTo
             this.LinkLabel_BLOG_PATH.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.LinkLabel_BLOG_PATH.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.btnAdd.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.btnAdd.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
+            this.btnAdd.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
+            this.btnAdd.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.Location = new System.Drawing.Point(589, 81);
+            this.btnAdd.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.btnAdd.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.btnAdd.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
+            this.btnAdd.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
+            this.btnAdd.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
+            this.btnAdd.Size = new System.Drawing.Size(100, 35);
+            this.btnAdd.Style = Sunny.UI.UIStyle.Orange;
+            this.btnAdd.Symbol = 61543;
+            this.btnAdd.TabIndex = 125;
+            this.btnAdd.Text = "增加";
+            this.btnAdd.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // FButton
             // 
             this.AllowShowTitle = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1568, 585);
+            this.ClientSize = new System.Drawing.Size(1282, 627);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.LinkLabel_BLOG_PATH);
             this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.uiLabel2);
@@ -1001,5 +1028,6 @@ using Sunny.UI; namespace ChiSaTo
         private UITextBox uiTextBox_commit_msg;
         private UILabel uiLabel3;
         private UILinkLabel LinkLabel_BLOG_PATH;
+        private UISymbolButton btnAdd;
     }
 }

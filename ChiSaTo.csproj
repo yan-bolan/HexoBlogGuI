@@ -25,9 +25,13 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="SunnyUI" Version="3.3.1" />
+    <PackageReference Include="YamlDotNet" Version="13.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\MiscEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

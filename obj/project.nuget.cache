@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0GRvKM7wU0ZzCdO0BIaddgrHZ7plkUiWSo7WlWkrerTDNYzmHK6Xl/BQB4+d4d9ch/On1zlHEeq7nHEC9Ccw/w==",
+  "dgSpecHash": "i4VcJKDwzrZBReT2re1TXX4dQ1Ajdbh7k+EvmZGsNoE9IxERzFPCxyVFSUB1Trgugd33sFewc7+fxpLfbGTqyQ==",
   "success": true,
   "projectFilePath": "D:\\WorkPlaceVisualStudio2022\\Blog_\\ChiSaTo\\ChiSaTo.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,8 @@
     "C:\\Users\\yayi\\.nuget\\packages\\sunnyui\\3.3.1\\sunnyui.3.3.1.nupkg.sha512",
     "C:\\Users\\yayi\\.nuget\\packages\\sunnyui.common\\3.3.1\\sunnyui.common.3.3.1.nupkg.sha512",
     "C:\\Users\\yayi\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\yayi\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\yayi\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\yayi\\.nuget\\packages\\yamldotnet\\13.0.0\\yamldotnet.13.0.0.nupkg.sha512"
   ],
   "logs": []
 }
