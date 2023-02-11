@@ -85,3 +85,4 @@ D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.pdb
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ChiSaTo.genruntimeconfig.cache
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\obj\Debug\net7.0-windows\ref\ChiSaTo.dll
 D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\YamlDotNet.dll
+D:\WorkPlaceVisualStudio2022\Blog_\ChiSaTo\bin\Debug\net7.0-windows\Markdig.dll

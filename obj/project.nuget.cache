@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i4VcJKDwzrZBReT2re1TXX4dQ1Ajdbh7k+EvmZGsNoE9IxERzFPCxyVFSUB1Trgugd33sFewc7+fxpLfbGTqyQ==",
+  "dgSpecHash": "ZOEUNvYW9trM2DZACmjKk4dKmFKYzLa5kABiMfDYo7FtwfdM26z7Ow8OJnIHps+S0fPqZrjXVFzskyTQzuCoUw==",
   "success": true,
   "projectFilePath": "D:\\WorkPlaceVisualStudio2022\\Blog_\\ChiSaTo\\ChiSaTo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yayi\\.nuget\\packages\\markdig\\0.30.4\\markdig.0.30.4.nupkg.sha512",
     "C:\\Users\\yayi\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\yayi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\yayi\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\7.0.0\\microsoft.extensions.configuration.fileextensions.7.0.0.nupkg.sha512",

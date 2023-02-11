@@ -43,7 +43,7 @@ using Sunny.UI; namespace ChiSaTo
             LinkLabel_BLOG_PATH.Text = Settings1.Default.BlogCateLog;
             FlowLayoutPanel_Recent.Clear();
             var bm = new Blog_Main();
-            var  md_file_latest = bm.GetLatestFiles(bm.Base_post_addr, 20).Select(x => Path.GetFileName(x)).ToList();
+            var md_file_latest = bm.GetLatestFiles(bm.Base_post_addr, 20).Select(x => Path.GetFileName(x)).ToList();
             foreach (var item in md_file_latest)
             {
                 var link = new UILinkLabel();
@@ -92,13 +92,13 @@ using Sunny.UI; namespace ChiSaTo
             SendParamToFrame("传值给框架");
         }
 
-         
+
 
         private void open_dir_buttion_Click(object sender, EventArgs e)
         {
             var bm = new Blog_Main();
 
-            bm.main(Enum_Blog.open_dir, "" );
+            bm.main(Enum_Blog.open_dir, "");
         }
 
         private void Button_new_post_Click(object sender, EventArgs e)
@@ -110,9 +110,9 @@ using Sunny.UI; namespace ChiSaTo
 
         private void uiButton_Commit_Click(object sender, EventArgs e)
         {
-           
+
             var bm = new Blog_Main();
-            var   message = uiTextBox_commit_msg.Text.Trim();
+            var message = uiTextBox_commit_msg.Text.Trim();
             if (!string.IsNullOrWhiteSpace(message))
             {
                 string command = $"hexo g & git add . & git commit -a -m \"{message}\"  & exit";
@@ -128,7 +128,7 @@ using Sunny.UI; namespace ChiSaTo
             {
                 ShowErrorTip("请输入提交信息！");
             }
-             
+
             Console.WriteLine("Good Bye !");
 
         }
@@ -155,7 +155,7 @@ using Sunny.UI; namespace ChiSaTo
 
             Console.WriteLine("Good Bye !");
         }
- 
+
 
         private void Button_open_folder_Click(object sender, EventArgs e)
         {
@@ -173,13 +173,15 @@ using Sunny.UI; namespace ChiSaTo
         private void btnAdd_Click(object sender, EventArgs e)
         {
             HeaderEdit frm = new HeaderEdit();
-                frm.Render();
-                frm.ShowDialog();
-                if (frm.IsOK)
-                {
-                    ShowSuccessDialog(frm.Person.ToString());
-                }
-                frm.Dispose();
+            frm.Render();
+            frm.ShowDialog();
+            if (frm.IsOK)
+            {
+                ShowSuccessDialog(frm.Person.ToString());
+            }
+            frm.Dispose();
         }
+        
+        
     }
 }

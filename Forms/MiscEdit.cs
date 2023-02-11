@@ -1,5 +1,10 @@
 ﻿using ChiSaTo.Model;
 using Sunny.UI;
+using YamlDotNet.Serialization.NamingConventions;
+using YamlDotNet.Serialization;
+using System.Globalization;
+using YamlDotNet.Serialization.Converters;
+
 namespace ChiSaTo
 {
     public partial class HeaderEdit : UIEditForm
@@ -30,7 +35,7 @@ namespace ChiSaTo
                 }
 
                 post.Title = edttitle.Text;
-                post.Create_Time = DateTime.Now;
+                post.date = DateTime.Now;
                 //person.Age = edtAge.IntValue;
                 //person.Birthday = edtDate.Value;
                 //person.Address = edtAddress.Text;
@@ -85,12 +90,39 @@ namespace ChiSaTo
                 uiFlowLayoutPanelTags.Remove(link);
             };
             uiFlowLayoutPanelTags.Add(link);
+            edttags.Text = "";//clear
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            if (post == null)
+            {
+                post = new Post();
+            }
+            if (string.IsNullOrWhiteSpace(edttitle.Text))
+            {
+                ShowErrorDialog("请输入文件名！");
+                return; 
+            }
+            post.Title =edttitle.Text;
+            post.date= DateTime.Now;
+
+            #region covert to Front Matter YAML
+
+
+            var serializer = new SerializerBuilder()
+            .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .WithTypeConverter(new DateTimeConverter(
+                   //provider: CultureInfo.CurrentCulture,
+                   formats: new[] {  "yyyy-MM-dd hh:mm:ss" , "yyyy-MM-dd"})
+               )
+            .Build();
+            var yaml = serializer.Serialize(post);
+            #endregion//https://github.com/aaubry/YamlDotNet
             var bm = new Blog_Main();
-            //bm.main(Enum_Blog.New_Post,  post.Title.Trim());
+
+            bm.Post_Content = $"---\n{yaml.Trim()}\n---\n";
+            bm.main(Enum_Blog.New_Post_by_file, post.Title.Trim());
         }
     }
 }

@@ -12,6 +12,10 @@ using System.Diagnostics;
 using Blog;
 using System.Security.Policy;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using YamlDotNet.Serialization;
+using Markdig;
+using Markdig.Extensions.Yaml;
+using Markdig.Syntax;
 //using Blog.Properties;
 
 namespace ChiSaTo
@@ -21,6 +25,8 @@ namespace ChiSaTo
         MyService service;
         public string Base_addr;
         public string Base_post_addr;
+        public string Post_Content=string.Empty;
+
         public Blog_Main() {
             service = ServiceProviderFactory.ServiceProvider.GetRequiredService<MyService>(); // use namespace   static class 
             Base_addr =  service.getBlogAddr();
@@ -78,6 +84,20 @@ namespace ChiSaTo
                     //string file_name = Prompt.Select("Select/Search your  file to continue", md_file_latest, 5);
                     //Process.Start("explorer.exe", Path.Combine(Base_post_addr, file_name));
                     break;
+                case Enum_Blog.New_Post_by_file:
+                    {
+                        string folderName = this.Base_post_addr;
+
+                        string pathString =  Path.Combine(folderName,title+".md" );
+                        File.Create(pathString).Close();
+                        if (File.Exists(pathString))
+                        {
+                            File.WriteAllLines(pathString, new string[] { Post_Content });
+                            open_md_file(pathString); 
+                        }
+                        
+                    }
+                    break;
                 default:
                     break;
             }
@@ -85,6 +105,8 @@ namespace ChiSaTo
             Console.WriteLine("😊 Enjoy your writing ☆*: .｡. o(≧▽≦)o .｡.:*☆ \n Good bye!");
 
         }
+
+        
 
         void open_md_file(string path)
         {
@@ -122,6 +144,47 @@ namespace ChiSaTo
         [Display(Name = "Open article directory")]
         open_dir,
         [Display(Name = "Open recent file")]
-        ls_post
+        ls_post,
+        [Display(Name = "New post by file")]
+        New_Post_by_file
+    }
+    public static class MarkdownExtensions
+    {
+        private static readonly IDeserializer YamlDeserializer =
+            new DeserializerBuilder()
+            .IgnoreUnmatchedProperties()
+            .Build();
+
+        private static readonly MarkdownPipeline Pipeline
+            = new MarkdownPipelineBuilder()
+            .UseYamlFrontMatter()
+            .Build();
+
+        public static T GetFrontMatter<T>(this string markdown)
+        {
+            var document = Markdown.Parse(markdown, Pipeline);
+            var block = document
+                .Descendants<YamlFrontMatterBlock>()
+                .FirstOrDefault();
+
+            if (block == null)
+                return default;
+
+            var yaml =
+                block
+                // this is not a mistake
+                // we have to call .Lines 2x
+                .Lines // StringLineGroup[]
+                .Lines // StringLine[]
+                .OrderByDescending(x => x.Line)
+                .Select(x => $"{x}\n")
+                .ToList()
+                .Select(x => x.Replace("---", string.Empty))
+                .Where(x => !string.IsNullOrWhiteSpace(x))
+                .Aggregate((s, agg) => agg + s);
+
+            return YamlDeserializer.Deserialize<T>(yaml);
+        }
+   
     }
 }
