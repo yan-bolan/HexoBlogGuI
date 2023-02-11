@@ -177,7 +177,7 @@ using Sunny.UI; namespace ChiSaTo
             frm.ShowDialog();
             if (frm.IsOK)
             {
-                ShowSuccessDialog(frm.Person.ToString());
+                ShowSuccessDialog("创建OK!");//frm.Person.ToString()
             }
             frm.Dispose();
         }

@@ -25,6 +25,9 @@ namespace ChiSaTo
 
         private Post post;
 
+        /// <summary>
+        /// 可用 getter setter 实现双向绑定数据这样一个功能 相当于ui model
+        /// </summary>
         public Post Person
         {
             get
@@ -109,7 +112,7 @@ namespace ChiSaTo
 
             #region covert to Front Matter YAML
 
-
+           
             var serializer = new SerializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
             .WithTypeConverter(new DateTimeConverter(
