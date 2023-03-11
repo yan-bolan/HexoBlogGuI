@@ -30,9 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Forms\MiscEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\MiscEdit.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

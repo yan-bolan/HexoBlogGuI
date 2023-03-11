@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using Sunny.UI; namespace ChiSaTo
+using Sunny.UI;
+namespace ChiSaTo
 {
     public partial class FButton : UIPage
     {
         public FButton()
         {
             InitializeComponent();
-            uiToolTip1.SetToolTip(uiButton1, uiButton1.Text);
+            //uiToolTip1.SetToolTip(uiButton1, uiButton1.Text);
             //uiToolTip1.SetToolTip(uiSymbolButton1, uiSymbolButton1.Text, "SunnyUI");
             //uiToolTip1.SetToolTip(uiSymbolButton2, uiSymbolButton2.Text, "SunnyUI",
             //    uiSymbolButton2.Symbol, 32, UIColor.Red);
@@ -50,7 +51,8 @@ using Sunny.UI; namespace ChiSaTo
                 link.SetDPIScale();
                 link.Text = item;
                 link.Name = link.Text;
-                link.Click += (object sender, System.EventArgs e) => {
+                link.Click += (object sender, System.EventArgs e) =>
+                {
                     var file_name = (UILinkLabel)sender;
                     Process.Start("explorer.exe", Path.Combine(bm.Base_post_addr, file_name.Text));
                 };
@@ -181,7 +183,5 @@ using Sunny.UI; namespace ChiSaTo
             }
             frm.Dispose();
         }
-        
-        
     }
 }

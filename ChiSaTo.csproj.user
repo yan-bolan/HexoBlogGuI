@@ -127,6 +127,9 @@
     <Compile Update="Forms\Frames\FHeaderMainFooter.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\MiscEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Pages\FPage1.cs">
       <SubType>Form</SubType>
     </Compile>
