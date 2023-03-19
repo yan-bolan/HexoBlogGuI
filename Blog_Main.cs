@@ -98,6 +98,7 @@ namespace ChiSaTo
                         
                     }
                     break;
+             
                 default:
                     break;
             }
@@ -146,7 +147,8 @@ namespace ChiSaTo
         [Display(Name = "Open recent file")]
         ls_post,
         [Display(Name = "New post by file")]
-        New_Post_by_file
+        New_Post_by_file,
+        New_Post_by_node
     }
     public static class MarkdownExtensions
     {

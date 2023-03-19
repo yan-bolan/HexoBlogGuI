@@ -4,6 +4,7 @@ using YamlDotNet.Serialization.NamingConventions;
 using YamlDotNet.Serialization;
 using System.Globalization;
 using YamlDotNet.Serialization.Converters;
+using System.Diagnostics;
 
 namespace ChiSaTo
 {
@@ -110,22 +111,31 @@ namespace ChiSaTo
             post.Title =edttitle.Text;
             post.date= DateTime.Now;
 
-            #region covert to Front Matter YAML
-
-           
-            var serializer = new SerializerBuilder()
-            .WithNamingConvention(CamelCaseNamingConvention.Instance)
-            .WithTypeConverter(new DateTimeConverter(
-                   //provider: CultureInfo.CurrentCulture,
-                   formats: new[] {  "yyyy-MM-dd hh:mm:ss" , "yyyy-MM-dd"})
-               )
-            .Build();
-            var yaml = serializer.Serialize(post);
-            #endregion//https://github.com/aaubry/YamlDotNet
             var bm = new Blog_Main();
+            var tagtext = post.Tags == null ? "" : string.Join(",", post.Tags);
+            string command = $" node  .\\create_post.js \"{post.Title}\" \"{tagtext}\"  &exit";
+            Process process = new Process();
+            process.StartInfo.WorkingDirectory = bm.Base_addr;
+            process.StartInfo.FileName = "CMD.exe";
+            process.StartInfo.Arguments = " /k " + command;
+            process.Start();
+            process.WaitForExit();
 
-            bm.Post_Content = $"---\n{yaml.Trim()}\n---\n";
-            bm.main(Enum_Blog.New_Post_by_file, post.Title.Trim());
+            //#region covert to Front Matter YAML
+
+
+            //var serializer = new SerializerBuilder()
+            //.WithNamingConvention(CamelCaseNamingConvention.Instance)
+            //.WithTypeConverter(new DateTimeConverter(
+            //       //provider: CultureInfo.CurrentCulture,
+            //       formats: new[] {  "yyyy-MM-dd hh:mm:ss" , "yyyy-MM-dd"})
+            //   )
+            //.Build();
+            //var yaml = serializer.Serialize(post);
+            //#endregion//https://github.com/aaubry/YamlDotNet
+
+            //bm.Post_Content = $"---\n{yaml.Trim()}\n---\n";
+            //bm.main(Enum_Blog.New_Post_by_file, post.Title.Trim());
         }
     }
 }

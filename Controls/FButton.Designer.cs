@@ -520,7 +520,7 @@ namespace ChiSaTo
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1282, 638);
+            ClientSize = new Size(1527, 638);
             ControlBoxFillHoverColor = Color.FromArgb(227, 175, 83);
             Controls.Add(btnAdd);
             Controls.Add(LinkLabel_BLOG_PATH);
