@@ -59,7 +59,7 @@ namespace ChiSaTo
             // uiLine5
             // 
             uiLine5.FillColor = Color.FromArgb(253, 249, 241);
-            uiLine5.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLine5.Font = new Font("Microsoft YaHei", 12F);
             uiLine5.LineColor = Color.FromArgb(220, 155, 40);
             uiLine5.LineColor2 = Color.FromArgb(253, 249, 241);
             uiLine5.Location = new Point(17, 435);
@@ -80,7 +80,7 @@ namespace ChiSaTo
             uiSymbolButton24.FillHoverColor = Color.FromArgb(227, 175, 83);
             uiSymbolButton24.FillPressColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton24.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton24.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiSymbolButton24.Font = new Font("Microsoft YaHei", 12F);
             uiSymbolButton24.Location = new Point(301, 135);
             uiSymbolButton24.MinimumSize = new Size(1, 1);
             uiSymbolButton24.Name = "uiSymbolButton24";
@@ -104,7 +104,7 @@ namespace ChiSaTo
             uiSymbolButton23.FillHoverColor = Color.FromArgb(227, 175, 83);
             uiSymbolButton23.FillPressColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton23.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton23.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiSymbolButton23.Font = new Font("Microsoft YaHei", 12F);
             uiSymbolButton23.Location = new Point(255, 135);
             uiSymbolButton23.MinimumSize = new Size(1, 1);
             uiSymbolButton23.Name = "uiSymbolButton23";
@@ -127,7 +127,7 @@ namespace ChiSaTo
             uiSymbolButton22.FillHoverColor = Color.FromArgb(227, 175, 83);
             uiSymbolButton22.FillPressColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton22.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton22.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiSymbolButton22.Font = new Font("Microsoft YaHei", 12F);
             uiSymbolButton22.Location = new Point(209, 135);
             uiSymbolButton22.MinimumSize = new Size(1, 1);
             uiSymbolButton22.Name = "uiSymbolButton22";
@@ -150,7 +150,7 @@ namespace ChiSaTo
             uiSymbolButton19.FillHoverColor = Color.FromArgb(227, 175, 83);
             uiSymbolButton19.FillPressColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton19.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton19.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiSymbolButton19.Font = new Font("Microsoft YaHei", 12F);
             uiSymbolButton19.Location = new Point(163, 135);
             uiSymbolButton19.MinimumSize = new Size(1, 1);
             uiSymbolButton19.Name = "uiSymbolButton19";
@@ -173,7 +173,7 @@ namespace ChiSaTo
             Button_open_folder.FillHoverColor = Color.FromArgb(235, 115, 115);
             Button_open_folder.FillPressColor = Color.FromArgb(184, 64, 64);
             Button_open_folder.FillSelectedColor = Color.FromArgb(184, 64, 64);
-            Button_open_folder.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Button_open_folder.Font = new Font("Microsoft YaHei", 12F);
             Button_open_folder.ImageAlign = ContentAlignment.TopLeft;
             Button_open_folder.IsCircle = true;
             Button_open_folder.Location = new Point(183, 471);
@@ -195,7 +195,7 @@ namespace ChiSaTo
             // uiLine2
             // 
             uiLine2.FillColor = Color.FromArgb(253, 249, 241);
-            uiLine2.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLine2.Font = new Font("Microsoft YaHei", 12F);
             uiLine2.LineColor = Color.FromArgb(220, 155, 40);
             uiLine2.LineColor2 = Color.FromArgb(253, 249, 241);
             uiLine2.Location = new Point(30, 185);
@@ -211,7 +211,7 @@ namespace ChiSaTo
             // uiLine1
             // 
             uiLine1.FillColor = Color.FromArgb(253, 249, 241);
-            uiLine1.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLine1.Font = new Font("Microsoft YaHei", 12F);
             uiLine1.LineColor = Color.FromArgb(220, 155, 40);
             uiLine1.LineColor2 = Color.FromArgb(253, 249, 241);
             uiLine1.Location = new Point(30, 55);
@@ -232,7 +232,7 @@ namespace ChiSaTo
             uiButton_Commit.FillHoverColor = Color.FromArgb(235, 115, 115);
             uiButton_Commit.FillPressColor = Color.FromArgb(184, 64, 64);
             uiButton_Commit.FillSelectedColor = Color.FromArgb(184, 64, 64);
-            uiButton_Commit.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiButton_Commit.Font = new Font("Microsoft YaHei", 12F);
             uiButton_Commit.Location = new Point(352, 376);
             uiButton_Commit.MinimumSize = new Size(1, 1);
             uiButton_Commit.Name = "uiButton_Commit";
@@ -257,7 +257,7 @@ namespace ChiSaTo
             uiButton14.FillHoverColor = Color.FromArgb(227, 175, 83);
             uiButton14.FillPressColor = Color.FromArgb(176, 124, 32);
             uiButton14.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiButton14.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiButton14.Font = new Font("Microsoft YaHei", 12F);
             uiButton14.Location = new Point(30, 135);
             uiButton14.MinimumSize = new Size(1, 1);
             uiButton14.Name = "uiButton14";
@@ -281,7 +281,7 @@ namespace ChiSaTo
             open_dir_buttion.FillHoverColor = Color.FromArgb(139, 203, 83);
             open_dir_buttion.FillPressColor = Color.FromArgb(88, 152, 32);
             open_dir_buttion.FillSelectedColor = Color.FromArgb(88, 152, 32);
-            open_dir_buttion.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            open_dir_buttion.Font = new Font("Microsoft YaHei", 12F);
             open_dir_buttion.Location = new Point(471, 81);
             open_dir_buttion.MinimumSize = new Size(1, 1);
             open_dir_buttion.Name = "open_dir_buttion";
@@ -301,7 +301,7 @@ namespace ChiSaTo
             // Button_new_post
             // 
             Button_new_post.Cursor = Cursors.Hand;
-            Button_new_post.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Button_new_post.Font = new Font("Microsoft YaHei", 12F);
             Button_new_post.Location = new Point(352, 81);
             Button_new_post.MinimumSize = new Size(1, 1);
             Button_new_post.Name = "Button_new_post";
@@ -321,7 +321,7 @@ namespace ChiSaTo
             uiButton_Push.FillHoverColor = Color.FromArgb(227, 175, 83);
             uiButton_Push.FillPressColor = Color.FromArgb(176, 124, 32);
             uiButton_Push.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiButton_Push.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiButton_Push.Font = new Font("Microsoft YaHei", 12F);
             uiButton_Push.Location = new Point(471, 376);
             uiButton_Push.MinimumSize = new Size(1, 1);
             uiButton_Push.Name = "uiButton_Push";
@@ -340,7 +340,7 @@ namespace ChiSaTo
             // uiToolTip1
             // 
             uiToolTip1.BackColor = Color.FromArgb(54, 54, 54);
-            uiToolTip1.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiToolTip1.Font = new Font("Microsoft YaHei", 12F);
             uiToolTip1.ForeColor = Color.FromArgb(239, 239, 239);
             uiToolTip1.OwnerDraw = true;
             // 
@@ -354,7 +354,7 @@ namespace ChiSaTo
             post_title_input_box.ButtonRectPressColor = Color.FromArgb(176, 124, 32);
             post_title_input_box.Cursor = Cursors.IBeam;
             post_title_input_box.FillColor2 = Color.FromArgb(253, 249, 241);
-            post_title_input_box.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            post_title_input_box.Font = new Font("Microsoft YaHei", 12F);
             post_title_input_box.Location = new Point(117, 83);
             post_title_input_box.Margin = new Padding(4, 5, 4, 5);
             post_title_input_box.MinimumSize = new Size(1, 16);
@@ -381,7 +381,7 @@ namespace ChiSaTo
             uiTextBox_commit_msg.ButtonRectPressColor = Color.FromArgb(176, 124, 32);
             uiTextBox_commit_msg.Cursor = Cursors.IBeam;
             uiTextBox_commit_msg.FillColor2 = Color.FromArgb(253, 249, 241);
-            uiTextBox_commit_msg.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiTextBox_commit_msg.Font = new Font("Microsoft YaHei", 12F);
             uiTextBox_commit_msg.Location = new Point(119, 378);
             uiTextBox_commit_msg.Margin = new Padding(4, 5, 4, 5);
             uiTextBox_commit_msg.MinimumSize = new Size(1, 16);
@@ -401,7 +401,7 @@ namespace ChiSaTo
             // uiLabel1
             // 
             uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel1.Font = new Font("Microsoft YaHei", 12F);
             uiLabel1.Location = new Point(33, 87);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(90, 21);
@@ -414,7 +414,7 @@ namespace ChiSaTo
             // uiLine3
             // 
             uiLine3.FillColor = Color.FromArgb(253, 249, 241);
-            uiLine3.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLine3.Font = new Font("Microsoft YaHei", 12F);
             uiLine3.LineColor = Color.FromArgb(220, 155, 40);
             uiLine3.LineColor2 = Color.FromArgb(253, 249, 241);
             uiLine3.Location = new Point(33, 350);
@@ -431,7 +431,7 @@ namespace ChiSaTo
             // 
             FlowLayoutPanel_Recent.FillColor = Color.FromArgb(253, 249, 241);
             FlowLayoutPanel_Recent.FillColor2 = Color.FromArgb(253, 249, 241);
-            FlowLayoutPanel_Recent.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            FlowLayoutPanel_Recent.Font = new Font("Microsoft YaHei", 12F);
             FlowLayoutPanel_Recent.Location = new Point(33, 209);
             FlowLayoutPanel_Recent.Margin = new Padding(4, 5, 4, 5);
             FlowLayoutPanel_Recent.MinimumSize = new Size(1, 1);
@@ -451,7 +451,7 @@ namespace ChiSaTo
             // uiLabel2
             // 
             uiLabel2.AutoSize = true;
-            uiLabel2.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel2.Font = new Font("Microsoft YaHei", 12F);
             uiLabel2.Location = new Point(35, 382);
             uiLabel2.Name = "uiLabel2";
             uiLabel2.Size = new Size(90, 21);
@@ -463,7 +463,7 @@ namespace ChiSaTo
             // 
             // uiLabel3
             // 
-            uiLabel3.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel3.Font = new Font("Microsoft YaHei", 9.75F);
             uiLabel3.Location = new Point(49, 471);
             uiLabel3.Name = "uiLabel3";
             uiLabel3.Size = new Size(123, 35);
@@ -476,7 +476,7 @@ namespace ChiSaTo
             // LinkLabel_BLOG_PATH
             // 
             LinkLabel_BLOG_PATH.ActiveLinkColor = Color.FromArgb(220, 155, 40);
-            LinkLabel_BLOG_PATH.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LinkLabel_BLOG_PATH.Font = new Font("Microsoft YaHei", 12F);
             LinkLabel_BLOG_PATH.LinkBehavior = LinkBehavior.AlwaysUnderline;
             LinkLabel_BLOG_PATH.LinkColor = Color.FromArgb(220, 155, 40);
             LinkLabel_BLOG_PATH.Location = new Point(49, 527);
@@ -497,7 +497,7 @@ namespace ChiSaTo
             btnAdd.FillHoverColor = Color.FromArgb(227, 175, 83);
             btnAdd.FillPressColor = Color.FromArgb(176, 124, 32);
             btnAdd.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            btnAdd.Font = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAdd.Font = new Font("Microsoft YaHei", 12F);
             btnAdd.Location = new Point(589, 81);
             btnAdd.MinimumSize = new Size(1, 1);
             btnAdd.Name = "btnAdd";
@@ -520,7 +520,7 @@ namespace ChiSaTo
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1527, 638);
+            ClientSize = new Size(1612, 601);
             ControlBoxFillHoverColor = Color.FromArgb(227, 175, 83);
             Controls.Add(btnAdd);
             Controls.Add(LinkLabel_BLOG_PATH);

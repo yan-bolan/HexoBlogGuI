@@ -1,4 +1,5 @@
-﻿using Sunny.UI; namespace ChiSaTo
+﻿using Sunny.UI;
+namespace ChiSaTo
 {
     partial class HeaderEdit
     {
@@ -28,206 +29,206 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.edttitle = new Sunny.UI.UITextBox();
-            this.title = new Sunny.UI.UILabel();
-            this.uiLabel3 = new Sunny.UI.UILabel();
-            this.edttags = new Sunny.UI.UITextBox();
-            this.add_tags = new Sunny.UI.UIButton();
-            this.uiFlowLayoutPanelTags = new Sunny.UI.UIFlowLayoutPanel();
-            this.pnlBtm.SuspendLayout();
-            this.SuspendLayout();
+            edttitle = new UITextBox();
+            title = new UILabel();
+            uiLabel3 = new UILabel();
+            edttags = new UITextBox();
+            add_tags = new UIButton();
+            uiFlowLayoutPanelTags = new UIFlowLayoutPanel();
+            pnlBtm.SuspendLayout();
+            SuspendLayout();
             // 
             // pnlBtm
             // 
-            this.pnlBtm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.pnlBtm.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.pnlBtm.Location = new System.Drawing.Point(1, 304);
-            this.pnlBtm.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.pnlBtm.Size = new System.Drawing.Size(518, 55);
-            this.pnlBtm.Style = Sunny.UI.UIStyle.Orange;
-            this.pnlBtm.TabIndex = 7;
+            pnlBtm.FillColor = Color.FromArgb(253, 249, 241);
+            pnlBtm.FillColor2 = Color.FromArgb(253, 249, 241);
+            pnlBtm.Location = new Point(1, 304);
+            pnlBtm.RectColor = Color.FromArgb(220, 155, 40);
+            pnlBtm.Size = new Size(518, 55);
+            pnlBtm.Style = UIStyle.Orange;
+            pnlBtm.TabIndex = 7;
             // 
             // btnCancel
             // 
-            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.btnCancel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.btnCancel.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.btnCancel.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.btnCancel.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.btnCancel.Location = new System.Drawing.Point(390, 12);
-            this.btnCancel.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.btnCancel.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.btnCancel.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.btnCancel.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.btnCancel.Style = Sunny.UI.UIStyle.Orange;
+            btnCancel.FillColor = Color.FromArgb(220, 155, 40);
+            btnCancel.FillColor2 = Color.FromArgb(220, 155, 40);
+            btnCancel.FillHoverColor = Color.FromArgb(227, 175, 83);
+            btnCancel.FillPressColor = Color.FromArgb(176, 124, 32);
+            btnCancel.FillSelectedColor = Color.FromArgb(176, 124, 32);
+            btnCancel.Location = new Point(390, 12);
+            btnCancel.RectColor = Color.FromArgb(220, 155, 40);
+            btnCancel.RectHoverColor = Color.FromArgb(227, 175, 83);
+            btnCancel.RectPressColor = Color.FromArgb(176, 124, 32);
+            btnCancel.RectSelectedColor = Color.FromArgb(176, 124, 32);
+            btnCancel.Style = UIStyle.Orange;
             // 
             // btnOK
             // 
-            this.btnOK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.btnOK.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.btnOK.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.btnOK.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.btnOK.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.btnOK.Location = new System.Drawing.Point(275, 12);
-            this.btnOK.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.btnOK.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.btnOK.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.btnOK.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.btnOK.Style = Sunny.UI.UIStyle.Orange;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            btnOK.FillColor = Color.FromArgb(220, 155, 40);
+            btnOK.FillColor2 = Color.FromArgb(220, 155, 40);
+            btnOK.FillHoverColor = Color.FromArgb(227, 175, 83);
+            btnOK.FillPressColor = Color.FromArgb(176, 124, 32);
+            btnOK.FillSelectedColor = Color.FromArgb(176, 124, 32);
+            btnOK.Location = new Point(275, 12);
+            btnOK.RectColor = Color.FromArgb(220, 155, 40);
+            btnOK.RectHoverColor = Color.FromArgb(227, 175, 83);
+            btnOK.RectPressColor = Color.FromArgb(176, 124, 32);
+            btnOK.RectSelectedColor = Color.FromArgb(176, 124, 32);
+            btnOK.Style = UIStyle.Orange;
+            btnOK.Click += btnOK_Click;
             // 
             // edttitle
             // 
-            this.edttitle.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.edttitle.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.edttitle.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.edttitle.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.edttitle.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.edttitle.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.edttitle.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.edttitle.EnterAsTab = true;
-            this.edttitle.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.edttitle.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edttitle.Location = new System.Drawing.Point(150, 55);
-            this.edttitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.edttitle.MinimumSize = new System.Drawing.Size(1, 16);
-            this.edttitle.Name = "edttitle";
-            this.edttitle.Padding = new System.Windows.Forms.Padding(5);
-            this.edttitle.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.edttitle.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.edttitle.ShowText = false;
-            this.edttitle.Size = new System.Drawing.Size(340, 29);
-            this.edttitle.Style = Sunny.UI.UIStyle.Orange;
-            this.edttitle.TabIndex = 0;
-            this.edttitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edttitle.Watermark = "";
-            this.edttitle.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            edttitle.ButtonFillColor = Color.FromArgb(220, 155, 40);
+            edttitle.ButtonFillHoverColor = Color.FromArgb(227, 175, 83);
+            edttitle.ButtonFillPressColor = Color.FromArgb(176, 124, 32);
+            edttitle.ButtonRectColor = Color.FromArgb(220, 155, 40);
+            edttitle.ButtonRectHoverColor = Color.FromArgb(227, 175, 83);
+            edttitle.ButtonRectPressColor = Color.FromArgb(176, 124, 32);
+            edttitle.Cursor = Cursors.IBeam;
+            edttitle.EnterAsTab = true;
+            edttitle.FillColor2 = Color.FromArgb(253, 249, 241);
+            edttitle.Font = new Font("Microsoft YaHei", 12F);
+            edttitle.Location = new Point(150, 55);
+            edttitle.Margin = new Padding(4, 5, 4, 5);
+            edttitle.MinimumSize = new Size(1, 16);
+            edttitle.Name = "edttitle";
+            edttitle.Padding = new Padding(5);
+            edttitle.RectColor = Color.FromArgb(220, 155, 40);
+            edttitle.ScrollBarColor = Color.FromArgb(220, 155, 40);
+            edttitle.ShowText = false;
+            edttitle.Size = new Size(340, 29);
+            edttitle.Style = UIStyle.Orange;
+            edttitle.TabIndex = 0;
+            edttitle.TextAlignment = ContentAlignment.MiddleLeft;
+            edttitle.Watermark = "";
+            edttitle.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // title
             // 
-            this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.title.Location = new System.Drawing.Point(56, 59);
-            this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(58, 21);
-            this.title.Style = Sunny.UI.UIStyle.Orange;
-            this.title.TabIndex = 4;
-            this.title.Text = "标题：";
-            this.title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.title.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            title.AutoSize = true;
+            title.Font = new Font("Microsoft YaHei", 12F);
+            title.Location = new Point(56, 59);
+            title.Name = "title";
+            title.Size = new Size(58, 21);
+            title.Style = UIStyle.Orange;
+            title.TabIndex = 4;
+            title.Text = "标题：";
+            title.TextAlign = ContentAlignment.MiddleLeft;
+            title.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // uiLabel3
             // 
-            this.uiLabel3.AutoSize = true;
-            this.uiLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiLabel3.Location = new System.Drawing.Point(56, 99);
-            this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(58, 21);
-            this.uiLabel3.Style = Sunny.UI.UIStyle.Orange;
-            this.uiLabel3.TabIndex = 6;
-            this.uiLabel3.Text = "标签：";
-            this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            uiLabel3.AutoSize = true;
+            uiLabel3.Font = new Font("Microsoft YaHei", 12F);
+            uiLabel3.Location = new Point(56, 99);
+            uiLabel3.Name = "uiLabel3";
+            uiLabel3.Size = new Size(58, 21);
+            uiLabel3.Style = UIStyle.Orange;
+            uiLabel3.TabIndex = 6;
+            uiLabel3.Text = "标签：";
+            uiLabel3.TextAlign = ContentAlignment.MiddleLeft;
+            uiLabel3.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // edttags
             // 
-            this.edttags.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.edttags.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.edttags.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.edttags.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.edttags.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.edttags.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.edttags.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.edttags.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.edttags.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edttags.Location = new System.Drawing.Point(150, 102);
-            this.edttags.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.edttags.MinimumSize = new System.Drawing.Size(1, 16);
-            this.edttags.Name = "edttags";
-            this.edttags.Padding = new System.Windows.Forms.Padding(5);
-            this.edttags.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.edttags.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.edttags.ShowText = false;
-            this.edttags.Size = new System.Drawing.Size(170, 29);
-            this.edttags.Style = Sunny.UI.UIStyle.Orange;
-            this.edttags.TabIndex = 6;
-            this.edttags.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edttags.Watermark = "";
-            this.edttags.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            edttags.ButtonFillColor = Color.FromArgb(220, 155, 40);
+            edttags.ButtonFillHoverColor = Color.FromArgb(227, 175, 83);
+            edttags.ButtonFillPressColor = Color.FromArgb(176, 124, 32);
+            edttags.ButtonRectColor = Color.FromArgb(220, 155, 40);
+            edttags.ButtonRectHoverColor = Color.FromArgb(227, 175, 83);
+            edttags.ButtonRectPressColor = Color.FromArgb(176, 124, 32);
+            edttags.Cursor = Cursors.IBeam;
+            edttags.FillColor2 = Color.FromArgb(253, 249, 241);
+            edttags.Font = new Font("Microsoft YaHei", 12F);
+            edttags.Location = new Point(150, 102);
+            edttags.Margin = new Padding(4, 5, 4, 5);
+            edttags.MinimumSize = new Size(1, 16);
+            edttags.Name = "edttags";
+            edttags.Padding = new Padding(5);
+            edttags.RectColor = Color.FromArgb(220, 155, 40);
+            edttags.ScrollBarColor = Color.FromArgb(220, 155, 40);
+            edttags.ShowText = false;
+            edttags.Size = new Size(170, 29);
+            edttags.Style = UIStyle.Orange;
+            edttags.TabIndex = 6;
+            edttags.TextAlignment = ContentAlignment.MiddleLeft;
+            edttags.Watermark = "";
+            edttags.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            edttags.KeyPress += enterkeyinput;
             // 
             // add_tags
             // 
-            this.add_tags.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.add_tags.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.add_tags.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.add_tags.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.add_tags.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.add_tags.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.add_tags.Location = new System.Drawing.Point(369, 99);
-            this.add_tags.MinimumSize = new System.Drawing.Size(1, 1);
-            this.add_tags.Name = "add_tags";
-            this.add_tags.Radius = 26;
-            this.add_tags.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.add_tags.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.add_tags.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.add_tags.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(124)))), ((int)(((byte)(32)))));
-            this.add_tags.Size = new System.Drawing.Size(82, 35);
-            this.add_tags.Style = Sunny.UI.UIStyle.Orange;
-            this.add_tags.TabIndex = 17;
-            this.add_tags.Text = "添加";
-            this.add_tags.UseDoubleClick = true;
-            this.add_tags.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.add_tags.Click += new System.EventHandler(this.add_tags_Click);
+            add_tags.FillColor = Color.FromArgb(220, 155, 40);
+            add_tags.FillColor2 = Color.FromArgb(220, 155, 40);
+            add_tags.FillHoverColor = Color.FromArgb(227, 175, 83);
+            add_tags.FillPressColor = Color.FromArgb(176, 124, 32);
+            add_tags.FillSelectedColor = Color.FromArgb(176, 124, 32);
+            add_tags.Font = new Font("Microsoft YaHei", 12F);
+            add_tags.Location = new Point(369, 99);
+            add_tags.MinimumSize = new Size(1, 1);
+            add_tags.Name = "add_tags";
+            add_tags.Radius = 26;
+            add_tags.RectColor = Color.FromArgb(220, 155, 40);
+            add_tags.RectHoverColor = Color.FromArgb(227, 175, 83);
+            add_tags.RectPressColor = Color.FromArgb(176, 124, 32);
+            add_tags.RectSelectedColor = Color.FromArgb(176, 124, 32);
+            add_tags.Size = new Size(82, 35);
+            add_tags.Style = UIStyle.Orange;
+            add_tags.TabIndex = 17;
+            add_tags.Text = "添加";
+            add_tags.UseDoubleClick = true;
+            add_tags.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            add_tags.Click += add_tags_Click;
             // 
             // uiFlowLayoutPanelTags
             // 
-            this.uiFlowLayoutPanelTags.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.uiFlowLayoutPanelTags.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.uiFlowLayoutPanelTags.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiFlowLayoutPanelTags.Location = new System.Drawing.Point(150, 157);
-            this.uiFlowLayoutPanelTags.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiFlowLayoutPanelTags.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiFlowLayoutPanelTags.Name = "uiFlowLayoutPanelTags";
-            this.uiFlowLayoutPanelTags.Padding = new System.Windows.Forms.Padding(2);
-            this.uiFlowLayoutPanelTags.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiFlowLayoutPanelTags.ScrollBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.uiFlowLayoutPanelTags.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiFlowLayoutPanelTags.ShowText = false;
-            this.uiFlowLayoutPanelTags.Size = new System.Drawing.Size(324, 107);
-            this.uiFlowLayoutPanelTags.Style = Sunny.UI.UIStyle.Orange;
-            this.uiFlowLayoutPanelTags.TabIndex = 18;
-            this.uiFlowLayoutPanelTags.Text = "uiFlowLayoutPanelTags";
-            this.uiFlowLayoutPanelTags.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.uiFlowLayoutPanelTags.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            uiFlowLayoutPanelTags.FillColor = Color.FromArgb(253, 249, 241);
+            uiFlowLayoutPanelTags.FillColor2 = Color.FromArgb(253, 249, 241);
+            uiFlowLayoutPanelTags.Font = new Font("Microsoft YaHei", 12F);
+            uiFlowLayoutPanelTags.Location = new Point(150, 157);
+            uiFlowLayoutPanelTags.Margin = new Padding(4, 5, 4, 5);
+            uiFlowLayoutPanelTags.MinimumSize = new Size(1, 1);
+            uiFlowLayoutPanelTags.Name = "uiFlowLayoutPanelTags";
+            uiFlowLayoutPanelTags.Padding = new Padding(2);
+            uiFlowLayoutPanelTags.RectColor = Color.FromArgb(220, 155, 40);
+            uiFlowLayoutPanelTags.ScrollBarBackColor = Color.FromArgb(253, 249, 241);
+            uiFlowLayoutPanelTags.ScrollBarColor = Color.FromArgb(220, 155, 40);
+            uiFlowLayoutPanelTags.ShowText = false;
+            uiFlowLayoutPanelTags.Size = new Size(324, 107);
+            uiFlowLayoutPanelTags.Style = UIStyle.Orange;
+            uiFlowLayoutPanelTags.TabIndex = 18;
+            uiFlowLayoutPanelTags.Text = "uiFlowLayoutPanelTags";
+            uiFlowLayoutPanelTags.TextAlignment = ContentAlignment.MiddleCenter;
+            uiFlowLayoutPanelTags.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // HeaderEdit
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(520, 362);
-            this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.Controls.Add(this.uiFlowLayoutPanelTags);
-            this.Controls.Add(this.add_tags);
-            this.Controls.Add(this.edttags);
-            this.Controls.Add(this.uiLabel3);
-            this.Controls.Add(this.edttitle);
-            this.Controls.Add(this.title);
-            this.Name = "HeaderEdit";
-            this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.Style = Sunny.UI.UIStyle.Orange;
-            this.Text = "创建文章";
-            this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 520, 362);
-            this.Controls.SetChildIndex(this.title, 0);
-            this.Controls.SetChildIndex(this.edttitle, 0);
-            this.Controls.SetChildIndex(this.uiLabel3, 0);
-            this.Controls.SetChildIndex(this.edttags, 0);
-            this.Controls.SetChildIndex(this.pnlBtm, 0);
-            this.Controls.SetChildIndex(this.add_tags, 0);
-            this.Controls.SetChildIndex(this.uiFlowLayoutPanelTags, 0);
-            this.pnlBtm.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(520, 362);
+            ControlBoxFillHoverColor = Color.FromArgb(227, 175, 83);
+            Controls.Add(uiFlowLayoutPanelTags);
+            Controls.Add(add_tags);
+            Controls.Add(edttags);
+            Controls.Add(uiLabel3);
+            Controls.Add(edttitle);
+            Controls.Add(title);
+            Name = "HeaderEdit";
+            RectColor = Color.FromArgb(220, 155, 40);
+            Style = UIStyle.Orange;
+            Text = "创建文章";
+            TitleColor = Color.FromArgb(220, 155, 40);
+            ZoomScaleRect = new Rectangle(15, 15, 520, 362);
+            Controls.SetChildIndex(title, 0);
+            Controls.SetChildIndex(edttitle, 0);
+            Controls.SetChildIndex(uiLabel3, 0);
+            Controls.SetChildIndex(edttags, 0);
+            Controls.SetChildIndex(pnlBtm, 0);
+            Controls.SetChildIndex(add_tags, 0);
+            Controls.SetChildIndex(uiFlowLayoutPanelTags, 0);
+            pnlBtm.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

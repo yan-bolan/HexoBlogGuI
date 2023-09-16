@@ -15,7 +15,7 @@ namespace ChiSaTo.Model
         public string Title { get; set; }
         [DataMember(Order = 1)]
         [YamlMember(Alias = "cover")]
-        public string cover = "https://api.isoyu.com/bing_images.php";//{ get; set; }
+        public string cover;//= "https://api.isoyu.com/bing_images.php";//{ get; set; }
 
         [DataMember(Order = 2)]
         [YamlMember(Alias = "date")]

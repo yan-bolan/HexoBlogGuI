@@ -84,7 +84,7 @@ namespace ChiSaTo
             post.Tags.Add(edttags.Text);
             var link = new UIButton();
             link.Radius = 18;
-            link.UseDoubleClick= true;
+            link.UseDoubleClick = true;
             link.AutoSize = true;
             link.SetDPIScale();
             link.Text = edttags.Text;
@@ -106,10 +106,10 @@ namespace ChiSaTo
             if (string.IsNullOrWhiteSpace(edttitle.Text))
             {
                 ShowErrorDialog("请输入文件名！");
-                return; 
+                return;
             }
-            post.Title =edttitle.Text;
-            post.date= DateTime.Now;
+            post.Title = edttitle.Text;
+            post.date = DateTime.Now;
 
             var bm = new Blog_Main();
             var tagtext = post.Tags == null ? "" : string.Join(",", post.Tags);
@@ -137,5 +137,15 @@ namespace ChiSaTo
             //bm.Post_Content = $"---\n{yaml.Trim()}\n---\n";
             //bm.main(Enum_Blog.New_Post_by_file, post.Title.Trim());
         }
+
+        private void enterkeyinput(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                add_tags_Click(sender, e);
+            }
+
+        }
+ 
     }
 }
