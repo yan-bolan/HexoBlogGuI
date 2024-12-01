@@ -183,5 +183,22 @@ namespace ChiSaTo
             }
             frm.Dispose();
         }
+
+        private void OpenGithubWithBrowserButtion_Click(object sender, EventArgs e)
+        {
+            //open github with browser
+            Process.Start("explorer.exe", "https://github.com/TangxinGH/Blog");
+
+        }
+
+        private void blogurllinklabelclicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("explorer.exe", "http://www.yayi.site/");
+        }
+
+        private void BlogUrlLinkLableClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("explorer.exe", "http://www.yuris.site/");
+        }
     }
 }

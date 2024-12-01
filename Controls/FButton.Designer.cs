@@ -54,6 +54,8 @@ namespace ChiSaTo
             uiLabel3 = new UILabel();
             LinkLabel_BLOG_PATH = new UILinkLabel();
             btnAdd = new UISymbolButton();
+            uiLinkLabel1 = new UILinkLabel();
+            uiLinkLabel2 = new UILinkLabel();
             SuspendLayout();
             // 
             // uiLine5
@@ -81,7 +83,7 @@ namespace ChiSaTo
             uiSymbolButton24.FillPressColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton24.FillSelectedColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton24.Font = new Font("Microsoft YaHei", 12F);
-            uiSymbolButton24.Location = new Point(301, 135);
+            uiSymbolButton24.Location = new Point(165, 369);
             uiSymbolButton24.MinimumSize = new Size(1, 1);
             uiSymbolButton24.Name = "uiSymbolButton24";
             uiSymbolButton24.RadiusSides = UICornerRadiusSides.RightTop | UICornerRadiusSides.RightBottom;
@@ -105,7 +107,7 @@ namespace ChiSaTo
             uiSymbolButton23.FillPressColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton23.FillSelectedColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton23.Font = new Font("Microsoft YaHei", 12F);
-            uiSymbolButton23.Location = new Point(255, 135);
+            uiSymbolButton23.Location = new Point(119, 369);
             uiSymbolButton23.MinimumSize = new Size(1, 1);
             uiSymbolButton23.Name = "uiSymbolButton23";
             uiSymbolButton23.RadiusSides = UICornerRadiusSides.None;
@@ -128,7 +130,7 @@ namespace ChiSaTo
             uiSymbolButton22.FillPressColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton22.FillSelectedColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton22.Font = new Font("Microsoft YaHei", 12F);
-            uiSymbolButton22.Location = new Point(209, 135);
+            uiSymbolButton22.Location = new Point(73, 369);
             uiSymbolButton22.MinimumSize = new Size(1, 1);
             uiSymbolButton22.Name = "uiSymbolButton22";
             uiSymbolButton22.RadiusSides = UICornerRadiusSides.None;
@@ -151,7 +153,7 @@ namespace ChiSaTo
             uiSymbolButton19.FillPressColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton19.FillSelectedColor = Color.FromArgb(176, 124, 32);
             uiSymbolButton19.Font = new Font("Microsoft YaHei", 12F);
-            uiSymbolButton19.Location = new Point(163, 135);
+            uiSymbolButton19.Location = new Point(27, 369);
             uiSymbolButton19.MinimumSize = new Size(1, 1);
             uiSymbolButton19.Name = "uiSymbolButton19";
             uiSymbolButton19.RadiusSides = UICornerRadiusSides.LeftTop | UICornerRadiusSides.LeftBottom;
@@ -198,7 +200,7 @@ namespace ChiSaTo
             uiLine2.Font = new Font("Microsoft YaHei", 12F);
             uiLine2.LineColor = Color.FromArgb(220, 155, 40);
             uiLine2.LineColor2 = Color.FromArgb(253, 249, 241);
-            uiLine2.Location = new Point(30, 185);
+            uiLine2.Location = new Point(30, 139);
             uiLine2.MinimumSize = new Size(16, 16);
             uiLine2.Name = "uiLine2";
             uiLine2.Size = new Size(670, 16);
@@ -233,7 +235,7 @@ namespace ChiSaTo
             uiButton_Commit.FillPressColor = Color.FromArgb(184, 64, 64);
             uiButton_Commit.FillSelectedColor = Color.FromArgb(184, 64, 64);
             uiButton_Commit.Font = new Font("Microsoft YaHei", 12F);
-            uiButton_Commit.Location = new Point(352, 376);
+            uiButton_Commit.Location = new Point(352, 330);
             uiButton_Commit.MinimumSize = new Size(1, 1);
             uiButton_Commit.Name = "uiButton_Commit";
             uiButton_Commit.Radius = 35;
@@ -258,7 +260,7 @@ namespace ChiSaTo
             uiButton14.FillPressColor = Color.FromArgb(176, 124, 32);
             uiButton14.FillSelectedColor = Color.FromArgb(176, 124, 32);
             uiButton14.Font = new Font("Microsoft YaHei", 12F);
-            uiButton14.Location = new Point(30, 135);
+            uiButton14.Location = new Point(589, 330);
             uiButton14.MinimumSize = new Size(1, 1);
             uiButton14.Name = "uiButton14";
             uiButton14.Radius = 35;
@@ -270,8 +272,9 @@ namespace ChiSaTo
             uiButton14.Style = UIStyle.Orange;
             uiButton14.StyleCustomMode = true;
             uiButton14.TabIndex = 75;
-            uiButton14.Text = "最近";
+            uiButton14.Text = "Github";
             uiButton14.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            uiButton14.Click += OpenGithubWithBrowserButtion_Click;
             // 
             // open_dir_buttion
             // 
@@ -322,7 +325,7 @@ namespace ChiSaTo
             uiButton_Push.FillPressColor = Color.FromArgb(176, 124, 32);
             uiButton_Push.FillSelectedColor = Color.FromArgb(176, 124, 32);
             uiButton_Push.Font = new Font("Microsoft YaHei", 12F);
-            uiButton_Push.Location = new Point(471, 376);
+            uiButton_Push.Location = new Point(471, 330);
             uiButton_Push.MinimumSize = new Size(1, 1);
             uiButton_Push.Name = "uiButton_Push";
             uiButton_Push.Radius = 35;
@@ -382,7 +385,7 @@ namespace ChiSaTo
             uiTextBox_commit_msg.Cursor = Cursors.IBeam;
             uiTextBox_commit_msg.FillColor2 = Color.FromArgb(253, 249, 241);
             uiTextBox_commit_msg.Font = new Font("Microsoft YaHei", 12F);
-            uiTextBox_commit_msg.Location = new Point(119, 378);
+            uiTextBox_commit_msg.Location = new Point(119, 332);
             uiTextBox_commit_msg.Margin = new Padding(4, 5, 4, 5);
             uiTextBox_commit_msg.MinimumSize = new Size(1, 16);
             uiTextBox_commit_msg.Name = "uiTextBox_commit_msg";
@@ -417,7 +420,7 @@ namespace ChiSaTo
             uiLine3.Font = new Font("Microsoft YaHei", 12F);
             uiLine3.LineColor = Color.FromArgb(220, 155, 40);
             uiLine3.LineColor2 = Color.FromArgb(253, 249, 241);
-            uiLine3.Location = new Point(33, 350);
+            uiLine3.Location = new Point(33, 304);
             uiLine3.MinimumSize = new Size(16, 16);
             uiLine3.Name = "uiLine3";
             uiLine3.Size = new Size(670, 20);
@@ -432,7 +435,7 @@ namespace ChiSaTo
             FlowLayoutPanel_Recent.FillColor = Color.FromArgb(253, 249, 241);
             FlowLayoutPanel_Recent.FillColor2 = Color.FromArgb(253, 249, 241);
             FlowLayoutPanel_Recent.Font = new Font("Microsoft YaHei", 12F);
-            FlowLayoutPanel_Recent.Location = new Point(33, 209);
+            FlowLayoutPanel_Recent.Location = new Point(33, 163);
             FlowLayoutPanel_Recent.Margin = new Padding(4, 5, 4, 5);
             FlowLayoutPanel_Recent.MinimumSize = new Size(1, 1);
             FlowLayoutPanel_Recent.Name = "FlowLayoutPanel_Recent";
@@ -452,7 +455,7 @@ namespace ChiSaTo
             // 
             uiLabel2.AutoSize = true;
             uiLabel2.Font = new Font("Microsoft YaHei", 12F);
-            uiLabel2.Location = new Point(35, 382);
+            uiLabel2.Location = new Point(35, 336);
             uiLabel2.Name = "uiLabel2";
             uiLabel2.Size = new Size(90, 21);
             uiLabel2.Style = UIStyle.Custom;
@@ -514,14 +517,50 @@ namespace ChiSaTo
             btnAdd.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             btnAdd.Click += btnAdd_Click;
             // 
+            // uiLinkLabel1
+            // 
+            uiLinkLabel1.ActiveLinkColor = Color.FromArgb(220, 155, 40);
+            uiLinkLabel1.AutoSize = true;
+            uiLinkLabel1.Font = new Font("Microsoft YaHei", 12F);
+            uiLinkLabel1.LinkBehavior = LinkBehavior.AlwaysUnderline;
+            uiLinkLabel1.Location = new Point(281, 383);
+            uiLinkLabel1.Name = "uiLinkLabel1";
+            uiLinkLabel1.Size = new Size(69, 21);
+            uiLinkLabel1.Style = UIStyle.Custom;
+            uiLinkLabel1.TabIndex = 126;
+            uiLinkLabel1.TabStop = true;
+            uiLinkLabel1.Text = "yayi.site";
+            uiLinkLabel1.VisitedLinkColor = Color.FromArgb(230, 80, 80);
+            uiLinkLabel1.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            uiLinkLabel1.LinkClicked += blogurllinklabelclicked;
+            // 
+            // uiLinkLabel2
+            // 
+            uiLinkLabel2.ActiveLinkColor = Color.FromArgb(220, 155, 40);
+            uiLinkLabel2.AutoSize = true;
+            uiLinkLabel2.Font = new Font("Microsoft YaHei", 12F);
+            uiLinkLabel2.LinkBehavior = LinkBehavior.AlwaysUnderline;
+            uiLinkLabel2.Location = new Point(423, 383);
+            uiLinkLabel2.Name = "uiLinkLabel2";
+            uiLinkLabel2.Size = new Size(75, 21);
+            uiLinkLabel2.Style = UIStyle.Custom;
+            uiLinkLabel2.TabIndex = 127;
+            uiLinkLabel2.TabStop = true;
+            uiLinkLabel2.Text = "yuris.site";
+            uiLinkLabel2.VisitedLinkColor = Color.FromArgb(230, 80, 80);
+            uiLinkLabel2.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            uiLinkLabel2.LinkClicked += BlogUrlLinkLableClicked;
+            // 
             // FButton
             // 
             AllowShowTitle = true;
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1612, 601);
+            ClientSize = new Size(1525, 869);
             ControlBoxFillHoverColor = Color.FromArgb(227, 175, 83);
+            Controls.Add(uiLinkLabel2);
+            Controls.Add(uiLinkLabel1);
             Controls.Add(btnAdd);
             Controls.Add(LinkLabel_BLOG_PATH);
             Controls.Add(uiLabel3);
@@ -580,5 +619,7 @@ namespace ChiSaTo
         private UILabel uiLabel3;
         private UILinkLabel LinkLabel_BLOG_PATH;
         private UISymbolButton btnAdd;
+        private UILinkLabel uiLinkLabel1;
+        private UILinkLabel uiLinkLabel2;
     }
 }

@@ -18,9 +18,12 @@ namespace Blog
         {
             this.configuration = configuration;
         }
-        public string getBlogAddr()
+        public string  getBlogAddr()
         {
-            return Settings1.Default.BlogCateLog==null ? configuration.GetSection("BlogCateLog").Value : Settings1.Default.BlogCateLog;
+            var xx= Settings1.Default.BlogCateLog==null ? configuration.GetSection("BlogCateLog").Value : Settings1.Default.BlogCateLog;
+             //删除转义字符
+            return Path.GetFullPath(xx);
+
                //configuration.GetSection("BlogCateLog").Value;
         }
 

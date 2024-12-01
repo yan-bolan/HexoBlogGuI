@@ -25,7 +25,7 @@ namespace ChiSaTo {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\博客\\\\YuriBlog")]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"D:\博客\YuriBlog")]
         public string BlogCateLog {
             get {
                 return ((string)(this["BlogCateLog"]));
