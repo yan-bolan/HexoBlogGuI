@@ -32,10 +32,6 @@ namespace ChiSaTo
         {
             components = new System.ComponentModel.Container();
             uiLine5 = new UILine();
-            uiSymbolButton24 = new UISymbolButton();
-            uiSymbolButton23 = new UISymbolButton();
-            uiSymbolButton22 = new UISymbolButton();
-            uiSymbolButton19 = new UISymbolButton();
             Button_open_folder = new UISymbolButton();
             uiLine2 = new UILine();
             uiLine1 = new UILine();
@@ -73,99 +69,6 @@ namespace ChiSaTo
             uiLine5.Text = "Settings";
             uiLine5.TextAlign = ContentAlignment.MiddleLeft;
             uiLine5.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            // 
-            // uiSymbolButton24
-            // 
-            uiSymbolButton24.Cursor = Cursors.Hand;
-            uiSymbolButton24.FillColor = Color.FromArgb(220, 155, 40);
-            uiSymbolButton24.FillColor2 = Color.FromArgb(220, 155, 40);
-            uiSymbolButton24.FillHoverColor = Color.FromArgb(227, 175, 83);
-            uiSymbolButton24.FillPressColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton24.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton24.Font = new Font("微软雅黑", 12F);
-            uiSymbolButton24.Location = new Point(165, 369);
-            uiSymbolButton24.MinimumSize = new Size(1, 1);
-            uiSymbolButton24.Name = "uiSymbolButton24";
-            uiSymbolButton24.RadiusSides = UICornerRadiusSides.RightTop | UICornerRadiusSides.RightBottom;
-            uiSymbolButton24.RectColor = Color.FromArgb(220, 155, 40);
-            uiSymbolButton24.RectHoverColor = Color.FromArgb(227, 175, 83);
-            uiSymbolButton24.RectPressColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton24.RectSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton24.RectSides = ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
-            uiSymbolButton24.Size = new Size(46, 35);
-            uiSymbolButton24.Style = UIStyle.Custom;
-            uiSymbolButton24.Symbol = 61473;
-            uiSymbolButton24.TabIndex = 103;
-            uiSymbolButton24.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            // 
-            // uiSymbolButton23
-            // 
-            uiSymbolButton23.Cursor = Cursors.Hand;
-            uiSymbolButton23.FillColor = Color.FromArgb(220, 155, 40);
-            uiSymbolButton23.FillColor2 = Color.FromArgb(220, 155, 40);
-            uiSymbolButton23.FillHoverColor = Color.FromArgb(227, 175, 83);
-            uiSymbolButton23.FillPressColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton23.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton23.Font = new Font("微软雅黑", 12F);
-            uiSymbolButton23.Location = new Point(119, 369);
-            uiSymbolButton23.MinimumSize = new Size(1, 1);
-            uiSymbolButton23.Name = "uiSymbolButton23";
-            uiSymbolButton23.RadiusSides = UICornerRadiusSides.None;
-            uiSymbolButton23.RectColor = Color.FromArgb(220, 155, 40);
-            uiSymbolButton23.RectHoverColor = Color.FromArgb(227, 175, 83);
-            uiSymbolButton23.RectPressColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton23.RectSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton23.Size = new Size(46, 35);
-            uiSymbolButton23.Style = UIStyle.Custom;
-            uiSymbolButton23.Symbol = 61544;
-            uiSymbolButton23.TabIndex = 102;
-            uiSymbolButton23.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            // 
-            // uiSymbolButton22
-            // 
-            uiSymbolButton22.Cursor = Cursors.Hand;
-            uiSymbolButton22.FillColor = Color.FromArgb(220, 155, 40);
-            uiSymbolButton22.FillColor2 = Color.FromArgb(220, 155, 40);
-            uiSymbolButton22.FillHoverColor = Color.FromArgb(227, 175, 83);
-            uiSymbolButton22.FillPressColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton22.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton22.Font = new Font("微软雅黑", 12F);
-            uiSymbolButton22.Location = new Point(73, 369);
-            uiSymbolButton22.MinimumSize = new Size(1, 1);
-            uiSymbolButton22.Name = "uiSymbolButton22";
-            uiSymbolButton22.RadiusSides = UICornerRadiusSides.None;
-            uiSymbolButton22.RectColor = Color.FromArgb(220, 155, 40);
-            uiSymbolButton22.RectHoverColor = Color.FromArgb(227, 175, 83);
-            uiSymbolButton22.RectPressColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton22.RectSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton22.Size = new Size(46, 35);
-            uiSymbolButton22.Style = UIStyle.Custom;
-            uiSymbolButton22.Symbol = 61508;
-            uiSymbolButton22.TabIndex = 101;
-            uiSymbolButton22.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            // 
-            // uiSymbolButton19
-            // 
-            uiSymbolButton19.Cursor = Cursors.Hand;
-            uiSymbolButton19.FillColor = Color.FromArgb(220, 155, 40);
-            uiSymbolButton19.FillColor2 = Color.FromArgb(220, 155, 40);
-            uiSymbolButton19.FillHoverColor = Color.FromArgb(227, 175, 83);
-            uiSymbolButton19.FillPressColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton19.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton19.Font = new Font("微软雅黑", 12F);
-            uiSymbolButton19.Location = new Point(27, 369);
-            uiSymbolButton19.MinimumSize = new Size(1, 1);
-            uiSymbolButton19.Name = "uiSymbolButton19";
-            uiSymbolButton19.RadiusSides = UICornerRadiusSides.LeftTop | UICornerRadiusSides.LeftBottom;
-            uiSymbolButton19.RectColor = Color.FromArgb(220, 155, 40);
-            uiSymbolButton19.RectHoverColor = Color.FromArgb(227, 175, 83);
-            uiSymbolButton19.RectPressColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton19.RectSelectedColor = Color.FromArgb(176, 124, 32);
-            uiSymbolButton19.Size = new Size(46, 35);
-            uiSymbolButton19.Style = UIStyle.Custom;
-            uiSymbolButton19.Symbol = 61543;
-            uiSymbolButton19.TabIndex = 100;
-            uiSymbolButton19.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // Button_open_folder
             // 
@@ -523,7 +426,7 @@ namespace ChiSaTo
             uiLinkLabel1.AutoSize = true;
             uiLinkLabel1.Font = new Font("微软雅黑", 12F);
             uiLinkLabel1.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            uiLinkLabel1.Location = new Point(281, 383);
+            uiLinkLabel1.Location = new Point(49, 383);
             uiLinkLabel1.Name = "uiLinkLabel1";
             uiLinkLabel1.Size = new Size(69, 21);
             uiLinkLabel1.Style = UIStyle.Custom;
@@ -540,7 +443,7 @@ namespace ChiSaTo
             uiLinkLabel2.AutoSize = true;
             uiLinkLabel2.Font = new Font("微软雅黑", 12F);
             uiLinkLabel2.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            uiLinkLabel2.Location = new Point(423, 383);
+            uiLinkLabel2.Location = new Point(143, 383);
             uiLinkLabel2.Name = "uiLinkLabel2";
             uiLinkLabel2.Size = new Size(75, 21);
             uiLinkLabel2.Style = UIStyle.Custom;
@@ -557,7 +460,7 @@ namespace ChiSaTo
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1579, 541);
+            ClientSize = new Size(1579, 517);
             ControlBoxFillHoverColor = Color.FromArgb(227, 175, 83);
             Controls.Add(uiLinkLabel2);
             Controls.Add(uiLinkLabel1);
@@ -569,11 +472,7 @@ namespace ChiSaTo
             Controls.Add(FlowLayoutPanel_Recent);
             Controls.Add(uiLabel1);
             Controls.Add(post_title_input_box);
-            Controls.Add(uiSymbolButton24);
             Controls.Add(uiLine5);
-            Controls.Add(uiSymbolButton23);
-            Controls.Add(uiSymbolButton22);
-            Controls.Add(uiSymbolButton19);
             Controls.Add(uiLine3);
             Controls.Add(Button_open_folder);
             Controls.Add(uiLine2);
