@@ -17,70 +17,72 @@ namespace ChiSaTo
             //通过设置PageIndex关联，节点文字、图标由相应的Page的Text、Symbol提供
             Aside.CreateChildNode(parent, AddPage(new FAvatar(), ++pageIndex));
             Aside.CreateChildNode(parent, AddPage(new FButton(), ++pageIndex));
+            #region 先隐藏
             //Aside.CreateChildNode(parent, AddPage(new FCheckBox(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FCombobox(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FContextMenuStrip(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FDataGridView(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FFlowLayoutPanel(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FHeaderButton(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FLabel(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FLine(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FListBox(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FNavigation(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FPanel(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FProcess(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FRadioButton(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FScrollBar(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FSplitContainer(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FTabControl(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FTextBox(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FTransfer(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FTreeView(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FOther(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FCombobox(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FContextMenuStrip(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FDataGridView(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FFlowLayoutPanel(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FHeaderButton(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FLabel(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FLine(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FListBox(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FNavigation(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FPanel(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FProcess(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FRadioButton(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FScrollBar(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FSplitContainer(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FTabControl(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FTextBox(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FTransfer(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FTreeView(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FOther(), ++pageIndex)); 
+            #endregion
             //示例设置某个节点的小红点提示
             Aside.ShowTips = true;
             Aside.SetNodeTipsText(Aside.Nodes[0], "6", Color.Red, Color.White);
-            Aside.SetNodeTipsText(parent.Nodes[1], " ", Color.Lime, Color.White);
+            //Aside.SetNodeTipsText(parent.Nodes[1], " ", Color.Lime, Color.White);
 
-            pageIndex = 2000;
-            Header.SetNodePageIndex(Header.Nodes[1], pageIndex);
-            Header.SetNodeSymbol(Header.Nodes[1], 61818);
-            parent = Aside.CreateNode("窗体", 61818, 24, pageIndex);
-            //通过设置GUID关联，节点字体图标和大小由UIPage设置
-            Aside.CreateChildNode(parent, AddPage(new FDialogs(), Guid.NewGuid()));
-            Aside.CreateChildNode(parent, AddPage(new FEditor(), Guid.NewGuid()));
-            Aside.CreateChildNode(parent, AddPage(new FFrames(), Guid.NewGuid()));
+            //pageIndex = 2000;
+            //Header.SetNodePageIndex(Header.Nodes[1], pageIndex);
+            //Header.SetNodeSymbol(Header.Nodes[1], 61818);
+            //parent = Aside.CreateNode("窗体", 61818, 24, pageIndex);
+            ////通过设置GUID关联，节点字体图标和大小由UIPage设置
+            //Aside.CreateChildNode(parent, AddPage(new FDialogs(), Guid.NewGuid()));
+            //Aside.CreateChildNode(parent, AddPage(new FEditor(), Guid.NewGuid()));
+            //Aside.CreateChildNode(parent, AddPage(new FFrames(), Guid.NewGuid()));
 
-            pageIndex = 3000;
-            Header.SetNodePageIndex(Header.Nodes[2], pageIndex);
-            Header.SetNodeSymbol(Header.Nodes[2], 61950);
-            parent = Aside.CreateNode("图表", 61950, 24, pageIndex);
-            //直接关联（默认自动生成GUID）
-            Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
-            Aside.CreateChildNode(parent, AddPage(new FLineChart()));
-            Aside.CreateChildNode(parent, AddPage(new FPieChart()));
+            //pageIndex = 3000;
+            //Header.SetNodePageIndex(Header.Nodes[2], pageIndex);
+            //Header.SetNodeSymbol(Header.Nodes[2], 61950);
+            //parent = Aside.CreateNode("图表", 61950, 24, pageIndex);
+            ////直接关联（默认自动生成GUID）
+            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
+            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
+            //Aside.CreateChildNode(parent, AddPage(new FLineChart()));
+            //Aside.CreateChildNode(parent, AddPage(new FPieChart()));
 
-            pageIndex = 4000;
-            Header.SetNodePageIndex(Header.Nodes[3], pageIndex);
-            Header.SetNodeSymbol(Header.Nodes[3], 362614);
-            parent = Aside.CreateNode("工控", 362614, 24, pageIndex);
-            //直接关联（默认自动生成GUID）
-           var mp  =  System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Namespace ;
+           // pageIndex = 4000;
+           // Header.SetNodePageIndex(Header.Nodes[3], pageIndex);
+           // Header.SetNodeSymbol(Header.Nodes[3], 362614);
+           // parent = Aside.CreateNode("工控", 362614, 24, pageIndex);
+           // //直接关联（默认自动生成GUID）
+           //var mp  =  System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Namespace ;
 
-            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FPipe")));
-            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FMeter")));
-            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FLed")));
-            Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FLight")));
+           // Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FPipe")));
+           // Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FMeter")));
+           // Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FLed")));
+           // Aside.CreateChildNode(parent, AddPage(CreateInstance<UIPage>($"{mp}.FLight")));
 
-            Header.SetNodeSymbol(Header.Nodes[4], 61502);
+            Header.SetNodeSymbol(Header.Nodes[1], 61502);
             var styles = UIStyles.PopularStyles();
             foreach (UIStyle style in styles)
             {
-                Header.CreateChildNode(Header.Nodes[4], style.DisplayText(), style.Value());
+                Header.CreateChildNode(Header.Nodes[1], style.DisplayText(), style.Value());
             }
 
-            Header.CreateChildNode(Header.Nodes[4], "多彩主题", UIStyle.Colorful.Value());
+            Header.CreateChildNode(Header.Nodes[1], "多彩主题", UIStyle.Colorful.Value());
             //直接增加一个页面，不在左侧列表显示
             AddPage(new FColorful());
             AddPage(new FCommon());

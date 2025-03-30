@@ -30,10 +30,10 @@ namespace ChiSaTo
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            TreeNode treeNode1 = new TreeNode("控件");
-            TreeNode treeNode2 = new TreeNode("窗体");
-            TreeNode treeNode3 = new TreeNode("图表");
-            TreeNode treeNode4 = new TreeNode("工控");
+            TreeNode treeNode1 = new TreeNode("Hexo");
+            //TreeNode treeNode2 = new TreeNode("窗体");
+            //TreeNode treeNode3 = new TreeNode("图表");
+            //TreeNode treeNode4 = new TreeNode("工控");
             TreeNode treeNode5 = new TreeNode("主题");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             uiAvatar = new UIAvatar();
@@ -73,15 +73,16 @@ namespace ChiSaTo
             treeNode1.ImageIndex = 1;
             treeNode1.Name = "节点0";
             treeNode1.Text = "控件";
-            treeNode2.Name = "节点1";
-            treeNode2.Text = "窗体";
-            treeNode3.Name = "节点2";
-            treeNode3.Text = "图表";
-            treeNode4.Name = "节点0";
-            treeNode4.Text = "工控";
+            //treeNode2.Name = "节点1";
+            //treeNode2.Text = "窗体";
+            //treeNode3.Name = "节点2";
+            //treeNode3.Text = "图表";
+            //treeNode4.Name = "节点0";
+            //treeNode4.Text = "工控";
             treeNode5.Name = "节点2";
             treeNode5.Text = "主题";
-            Header.Nodes.AddRange(new TreeNode[] { treeNode1, treeNode2, treeNode3, treeNode4, treeNode5 });
+            //Header.Nodes.AddRange(new TreeNode[] { treeNode1, treeNode2, treeNode3, treeNode4, treeNode5 });
+            Header.Nodes.AddRange(new TreeNode[] { treeNode1,   treeNode5 });
             Header.NodeSize = new Size(110, 45);
             Header.SelectedForeColor = Color.FromArgb(220, 155, 40);
             Header.SelectedHighColor = Color.FromArgb(220, 155, 40);
