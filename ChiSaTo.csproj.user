@@ -160,6 +160,9 @@
     <Compile Update="Industrial\FPipe.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Units\FCommon.cs">
       <SubType>Form</SubType>
     </Compile>

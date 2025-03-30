@@ -1,4 +1,6 @@
-﻿using Sunny.UI; namespace ChiSaTo
+﻿using Sunny.UI;
+using System.ComponentModel;
+namespace ChiSaTo
 {
     public partial class FEdit : UIEditForm
     {
@@ -18,6 +20,7 @@
 
         private Person person;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Person Person
         {
             get

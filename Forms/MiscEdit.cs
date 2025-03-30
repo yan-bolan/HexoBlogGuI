@@ -5,6 +5,7 @@ using YamlDotNet.Serialization;
 using System.Globalization;
 using YamlDotNet.Serialization.Converters;
 using System.Diagnostics;
+using System.ComponentModel;
 
 namespace ChiSaTo
 {
@@ -26,6 +27,10 @@ namespace ChiSaTo
 
         private Post post;
 
+        /// <summary>
+        /// 可用 getter setter 实现双向绑定数据这样一个功能 相当于ui model
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// 可用 getter setter 实现双向绑定数据这样一个功能 相当于ui model
         /// </summary>
@@ -108,19 +113,34 @@ namespace ChiSaTo
                 ShowErrorDialog("请输入文件名！");
                 return;
             }
+
             post.Title = edttitle.Text;
             post.date = DateTime.Now;
 
             var bm = new Blog_Main();
             var tagtext = post.Tags == null ? "" : string.Join(",", post.Tags);
             string command = $" node  .\\create_post.js \"{post.Title}\" \"{tagtext}\"  &exit";
-            Process process = new Process();
+            Process process = new();
             process.StartInfo.WorkingDirectory = bm.Base_addr;
             process.StartInfo.FileName = "CMD.exe";
             process.StartInfo.Arguments = " /k " + command;
             process.Start();
+            string output = process.StandardOutput.ReadToEnd();
+            string error = process.StandardError.ReadToEnd();
             process.WaitForExit();
+            Console.WriteLine("输出: " + output);
+            Console.WriteLine("错误: " + error);
 
+            if (process.ExitCode != 0)
+            {
+                Console.WriteLine($"Node.js脚本执行失败，退出代码: {process.ExitCode}");
+            }
+            Console.WriteLine("当前工作目录: " + bm.Base_addr);
+            // 检查目录是否存在
+            if (!Directory.Exists(bm.Base_addr))
+            {
+                Console.WriteLine("错误：工作目录不存在！");
+            }
             //#region covert to Front Matter YAML
 
 

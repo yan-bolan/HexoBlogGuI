@@ -28,98 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uiLine2 = new Sunny.UI.UILine();
-            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            this.btnAdd = new Sunny.UI.UISymbolButton();
-            this.uiLine1 = new Sunny.UI.UILine();
-            this.btnEdit = new Sunny.UI.UISymbolButton();
-            this.SuspendLayout();
+            uiLine2 = new UILine();
+            uiSymbolButton1 = new UISymbolButton();
+            btnAdd = new UISymbolButton();
+            uiLine1 = new UILine();
+            btnEdit = new UISymbolButton();
+            SuspendLayout();
             // 
             // uiLine2
             // 
-            this.uiLine2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiLine2.Location = new System.Drawing.Point(30, 149);
-            this.uiLine2.MinimumSize = new System.Drawing.Size(16, 16);
-            this.uiLine2.Name = "uiLine2";
-            this.uiLine2.Size = new System.Drawing.Size(670, 20);
-            this.uiLine2.TabIndex = 27;
-            this.uiLine2.Text = "UIEditForm 代码生成";
-            this.uiLine2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLine2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            uiLine2.Font = new Font("微软雅黑", 12F);
+            uiLine2.Location = new Point(30, 149);
+            uiLine2.MinimumSize = new Size(16, 16);
+            uiLine2.Name = "uiLine2";
+            uiLine2.Size = new Size(670, 20);
+            uiLine2.TabIndex = 27;
+            uiLine2.Text = "UIEditForm 代码生成";
+            uiLine2.TextAlign = ContentAlignment.MiddleLeft;
+            uiLine2.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // uiSymbolButton1
             // 
-            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiSymbolButton1.Location = new System.Drawing.Point(30, 184);
-            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton1.Name = "uiSymbolButton1";
-            this.uiSymbolButton1.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolButton1.Size = new System.Drawing.Size(100, 35);
-            this.uiSymbolButton1.Symbol = 61543;
-            this.uiSymbolButton1.TabIndex = 26;
-            this.uiSymbolButton1.Text = "增加";
-            this.uiSymbolButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
+            uiSymbolButton1.Cursor = Cursors.Hand;
+            uiSymbolButton1.Font = new Font("微软雅黑", 12F);
+            uiSymbolButton1.Location = new Point(30, 184);
+            uiSymbolButton1.MinimumSize = new Size(1, 1);
+            uiSymbolButton1.Name = "uiSymbolButton1";
+            uiSymbolButton1.Padding = new Padding(28, 0, 0, 0);
+            uiSymbolButton1.Size = new Size(100, 35);
+            uiSymbolButton1.Symbol = 61543;
+            uiSymbolButton1.TabIndex = 26;
+            uiSymbolButton1.Text = "增加";
+            uiSymbolButton1.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            uiSymbolButton1.Click += uiSymbolButton1_Click;
             // 
             // btnAdd
             // 
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.Location = new System.Drawing.Point(30, 92);
-            this.btnAdd.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.btnAdd.Size = new System.Drawing.Size(100, 35);
-            this.btnAdd.Symbol = 61543;
-            this.btnAdd.TabIndex = 25;
-            this.btnAdd.Text = "增加";
-            this.btnAdd.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Cursor = Cursors.Hand;
+            btnAdd.Font = new Font("微软雅黑", 12F);
+            btnAdd.Location = new Point(30, 92);
+            btnAdd.MinimumSize = new Size(1, 1);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Padding = new Padding(28, 0, 0, 0);
+            btnAdd.Size = new Size(100, 35);
+            btnAdd.Symbol = 61543;
+            btnAdd.TabIndex = 25;
+            btnAdd.Text = "增加";
+            btnAdd.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            btnAdd.Click += btnAdd_Click;
             // 
             // uiLine1
             // 
-            this.uiLine1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiLine1.Location = new System.Drawing.Point(30, 55);
-            this.uiLine1.MinimumSize = new System.Drawing.Size(16, 16);
-            this.uiLine1.Name = "uiLine1";
-            this.uiLine1.Size = new System.Drawing.Size(670, 20);
-            this.uiLine1.TabIndex = 24;
-            this.uiLine1.Text = "UIEditForm";
-            this.uiLine1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLine1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            uiLine1.Font = new Font("微软雅黑", 12F);
+            uiLine1.Location = new Point(30, 55);
+            uiLine1.MinimumSize = new Size(16, 16);
+            uiLine1.Name = "uiLine1";
+            uiLine1.Size = new Size(670, 20);
+            uiLine1.TabIndex = 24;
+            uiLine1.Text = "UIEditForm";
+            uiLine1.TextAlign = ContentAlignment.MiddleLeft;
+            uiLine1.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // btnEdit
             // 
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(152, 92);
-            this.btnEdit.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.btnEdit.Size = new System.Drawing.Size(100, 35);
-            this.btnEdit.Symbol = 61508;
-            this.btnEdit.TabIndex = 23;
-            this.btnEdit.Text = "编辑";
-            this.btnEdit.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            btnEdit.Cursor = Cursors.Hand;
+            btnEdit.Font = new Font("微软雅黑", 12F);
+            btnEdit.Location = new Point(152, 92);
+            btnEdit.MinimumSize = new Size(1, 1);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Padding = new Padding(28, 0, 0, 0);
+            btnEdit.Size = new Size(100, 35);
+            btnEdit.Symbol = 61508;
+            btnEdit.TabIndex = 23;
+            btnEdit.Text = "编辑";
+            btnEdit.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            btnEdit.Click += btnEdit_Click;
             // 
             // FEditor
             // 
-            this.AllowShowTitle = true;
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1282, 659);
-            this.Controls.Add(this.uiLine2);
-            this.Controls.Add(this.uiSymbolButton1);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.uiLine1);
-            this.Controls.Add(this.btnEdit);
-            this.Name = "FEditor";
-            this.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
-            this.ShowTitle = true;
-            this.Symbol = 61508;
-            this.Text = "Editor";
-            this.ResumeLayout(false);
+            AllowShowTitle = true;
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(1579, 573);
+            Controls.Add(uiLine2);
+            Controls.Add(uiSymbolButton1);
+            Controls.Add(btnAdd);
+            Controls.Add(uiLine1);
+            Controls.Add(btnEdit);
+            Name = "FEditor";
+            Padding = new Padding(0, 35, 0, 0);
+            ShowTitle = true;
+            Symbol = 61508;
+            Text = "Editor";
+            ResumeLayout(false);
 
         }
 

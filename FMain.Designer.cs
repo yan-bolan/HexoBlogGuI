@@ -29,47 +29,47 @@ namespace ChiSaTo
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("控件");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("窗体");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("图表");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("工控");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("主题");
+            components = new System.ComponentModel.Container();
+            TreeNode treeNode1 = new TreeNode("控件");
+            TreeNode treeNode2 = new TreeNode("窗体");
+            TreeNode treeNode3 = new TreeNode("图表");
+            TreeNode treeNode4 = new TreeNode("工控");
+            TreeNode treeNode5 = new TreeNode("主题");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
-            this.uiAvatar = new Sunny.UI.UIAvatar();
-            this.StyleManager = new Sunny.UI.UIStyleManager(this.components);
-            this.uiContextMenuStrip1 = new Sunny.UI.UIContextMenuStrip();
-            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.关于ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Header.SuspendLayout();
-            this.uiContextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            uiAvatar = new UIAvatar();
+            StyleManager = new UIStyleManager(components);
+            uiContextMenuStrip1 = new UIContextMenuStrip();
+            关于ToolStripMenuItem = new ToolStripMenuItem();
+            关于ToolStripMenuItem1 = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
+            Header.SuspendLayout();
+            uiContextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // Aside
             // 
-            this.Aside.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Aside.ItemHeight = 36;
-            this.Aside.LineColor = System.Drawing.Color.Black;
-            this.Aside.Location = new System.Drawing.Point(2, 146);
-            this.Aside.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
-            this.Aside.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Aside.ScrollBarHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Aside.ScrollBarPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Aside.SelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.Aside.SelectedHighColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.Aside.ShowOneNode = true;
-            this.Aside.ShowSecondBackColor = true;
-            this.Aside.ShowTips = true;
-            this.Aside.Size = new System.Drawing.Size(250, 572);
-            this.Aside.Style = Sunny.UI.UIStyle.Orange;
+            Aside.ForeColor = Color.FromArgb(240, 240, 240);
+            Aside.ItemHeight = 36;
+            Aside.LineColor = Color.Black;
+            Aside.Location = new Point(2, 146);
+            Aside.MenuStyle = UIMenuStyle.Custom;
+            Aside.ScrollBarColor = Color.FromArgb(240, 240, 240);
+            Aside.ScrollBarHoverColor = Color.FromArgb(240, 240, 240);
+            Aside.ScrollBarPressColor = Color.FromArgb(240, 240, 240);
+            Aside.SelectedForeColor = Color.FromArgb(220, 155, 40);
+            Aside.SelectedHighColor = Color.FromArgb(220, 155, 40);
+            Aside.ShowOneNode = true;
+            Aside.ShowSecondBackColor = true;
+            Aside.ShowTips = true;
+            Aside.Size = new Size(250, 572);
+            Aside.Style = UIStyle.Orange;
             // 
             // Header
             // 
-            this.Header.Controls.Add(this.pictureBox1);
-            this.Header.Controls.Add(this.uiAvatar);
-            this.Header.Location = new System.Drawing.Point(2, 36);
+            Header.Controls.Add(pictureBox1);
+            Header.Controls.Add(uiAvatar);
+            Header.Location = new Point(2, 36);
             treeNode1.ImageIndex = 1;
             treeNode1.Name = "节点0";
             treeNode1.Text = "控件";
@@ -81,105 +81,97 @@ namespace ChiSaTo
             treeNode4.Text = "工控";
             treeNode5.Name = "节点2";
             treeNode5.Text = "主题";
-            this.Header.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5});
-            this.Header.NodeSize = new System.Drawing.Size(110, 45);
-            this.Header.SelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.Header.SelectedHighColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.Header.SelectedIndex = 0;
-            this.Header.Size = new System.Drawing.Size(1020, 110);
-            this.Header.Style = Sunny.UI.UIStyle.Orange;
-            this.Header.MenuItemClick += new Sunny.UI.UINavBar.OnMenuItemClick(this.Header_MenuItemClick);
+            Header.Nodes.AddRange(new TreeNode[] { treeNode1, treeNode2, treeNode3, treeNode4, treeNode5 });
+            Header.NodeSize = new Size(110, 45);
+            Header.SelectedForeColor = Color.FromArgb(220, 155, 40);
+            Header.SelectedHighColor = Color.FromArgb(220, 155, 40);
+            Header.SelectedIndex = 0;
+            Header.Size = new Size(1020, 110);
+            Header.Style = UIStyle.Orange;
+            Header.MenuItemClick += Header_MenuItemClick;
             // 
             // uiAvatar
             // 
-            this.uiAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiAvatar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiAvatar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.uiAvatar.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
-            this.uiAvatar.Image = global::ChiSaTo.Properties.Resources.avtarhutao;
-            this.uiAvatar.Location = new System.Drawing.Point(939, 25);
-            this.uiAvatar.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiAvatar.Name = "uiAvatar";
-            this.uiAvatar.Size = new System.Drawing.Size(66, 70);
-            this.uiAvatar.Style = Sunny.UI.UIStyle.Orange;
-            this.uiAvatar.TabIndex = 4;
-            this.uiAvatar.Text = "uiAvatar1";
-            this.uiAvatar.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            uiAvatar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            uiAvatar.Font = new Font("Microsoft YaHei", 12F);
+            uiAvatar.ForeColor = Color.FromArgb(220, 155, 40);
+            uiAvatar.Icon = UIAvatar.UIIcon.Image;
+            uiAvatar.Image = Properties.Resources.avtarhutao;
+            uiAvatar.Location = new Point(939, 25);
+            uiAvatar.MinimumSize = new Size(1, 1);
+            uiAvatar.Name = "uiAvatar";
+            uiAvatar.Size = new Size(66, 70);
+            uiAvatar.Style = UIStyle.Orange;
+            uiAvatar.TabIndex = 4;
+            uiAvatar.Text = "uiAvatar1";
+            uiAvatar.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // StyleManager
             // 
-            this.StyleManager.DPIScale = true;
+            StyleManager.DPIScale = true;
             // 
             // uiContextMenuStrip1
             // 
-            this.uiContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.uiContextMenuStrip1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.uiContextMenuStrip1.IsScaled = true;
-            this.uiContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.关于ToolStripMenuItem,
-            this.关于ToolStripMenuItem1});
-            this.uiContextMenuStrip1.Name = "uiContextMenuStrip1";
-            this.uiContextMenuStrip1.Size = new System.Drawing.Size(113, 56);
-            this.uiContextMenuStrip1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            uiContextMenuStrip1.BackColor = Color.FromArgb(243, 249, 255);
+            uiContextMenuStrip1.Font = new Font("Microsoft YaHei", 12F);
+            uiContextMenuStrip1.IsScaled = true;
+            uiContextMenuStrip1.Items.AddRange(new ToolStripItem[] { 关于ToolStripMenuItem, 关于ToolStripMenuItem1 });
+            uiContextMenuStrip1.Name = "uiContextMenuStrip1";
+            uiContextMenuStrip1.Size = new Size(113, 56);
+            uiContextMenuStrip1.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // 关于ToolStripMenuItem
             // 
-            this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
-            this.关于ToolStripMenuItem.Text = "主页";
-            this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
+            关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
+            关于ToolStripMenuItem.Size = new Size(112, 26);
+            关于ToolStripMenuItem.Text = "主页";
+            关于ToolStripMenuItem.Click += 关于ToolStripMenuItem_Click;
             // 
             // 关于ToolStripMenuItem1
             // 
-            this.关于ToolStripMenuItem1.Name = "关于ToolStripMenuItem1";
-            this.关于ToolStripMenuItem1.Size = new System.Drawing.Size(112, 26);
-            this.关于ToolStripMenuItem1.Text = "关于";
-            this.关于ToolStripMenuItem1.Click += new System.EventHandler(this.关于ToolStripMenuItem1_Click);
+            关于ToolStripMenuItem1.Name = "关于ToolStripMenuItem1";
+            关于ToolStripMenuItem1.Size = new Size(112, 26);
+            关于ToolStripMenuItem1.Text = "关于";
+            关于ToolStripMenuItem1.Click += 关于ToolStripMenuItem1_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ChiSaTo.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(227, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.logo;
+            pictureBox1.Location = new Point(3, 21);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(227, 74);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // FMain
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1024, 720);
-            this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(175)))), ((int)(((byte)(83)))));
-            this.ExtendBox = true;
-            this.ExtendMenu = this.uiContextMenuStrip1;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1024, 720);
-            this.Name = "FMain";
-            this.Padding = new System.Windows.Forms.Padding(2, 36, 2, 2);
-            this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.ShowDragStretch = true;
-            this.ShowRadius = false;
-            this.ShowShadow = true;
-            this.Style = Sunny.UI.UIStyle.Orange;
-            this.Text = "博客";
-            this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 1024, 720);
-            this.Selecting += new Sunny.UI.UIMainFrame.OnSelecting(this.FMain_Selecting);
-            this.HotKeyEventHandler += new Sunny.UI.HotKeyEventHandler(this.FMain_HotKeyEventHandler);
-            this.ReceiveParams += new Sunny.UI.OnReceiveParams(this.FMain_ReceiveParams);
-            this.Controls.SetChildIndex(this.Header, 0);
-            this.Controls.SetChildIndex(this.Aside, 0);
-            this.Header.ResumeLayout(false);
-            this.uiContextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(1024, 720);
+            ControlBoxFillHoverColor = Color.FromArgb(227, 175, 83);
+            ExtendBox = true;
+            ExtendMenu = uiContextMenuStrip1;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(1024, 720);
+            Name = "FMain";
+            Padding = new Padding(2, 36, 2, 2);
+            RectColor = Color.FromArgb(220, 155, 40);
+            ShowDragStretch = true;
+            ShowRadius = false;
+            ShowShadow = true;
+            Style = UIStyle.Orange;
+            Text = "博客";
+            TitleColor = Color.FromArgb(220, 155, 40);
+            ZoomScaleRect = new Rectangle(15, 15, 1024, 720);
+            Selecting += FMain_Selecting;
+            HotKeyEventHandler += FMain_HotKeyEventHandler;
+            ReceiveParams += FMain_ReceiveParams;
+            Controls.SetChildIndex(Header, 0);
+            Controls.SetChildIndex(Aside, 0);
+            Header.ResumeLayout(false);
+            uiContextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

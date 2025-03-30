@@ -17,7 +17,7 @@ namespace ChiSaTo
             //通过设置PageIndex关联，节点文字、图标由相应的Page的Text、Symbol提供
             Aside.CreateChildNode(parent, AddPage(new FAvatar(), ++pageIndex));
             Aside.CreateChildNode(parent, AddPage(new FButton(), ++pageIndex));
-            Aside.CreateChildNode(parent, AddPage(new FCheckBox(), ++pageIndex));
+            //Aside.CreateChildNode(parent, AddPage(new FCheckBox(), ++pageIndex));
             Aside.CreateChildNode(parent, AddPage(new FCombobox(), ++pageIndex));
             Aside.CreateChildNode(parent, AddPage(new FContextMenuStrip(), ++pageIndex));
             Aside.CreateChildNode(parent, AddPage(new FDataGridView(), ++pageIndex));
