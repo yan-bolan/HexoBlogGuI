@@ -30,11 +30,8 @@ namespace ChiSaTo
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            TreeNode treeNode1 = new TreeNode("Hexo");
-            //TreeNode treeNode2 = new TreeNode("窗体");
-            //TreeNode treeNode3 = new TreeNode("图表");
-            //TreeNode treeNode4 = new TreeNode("工控");
-            TreeNode treeNode5 = new TreeNode("主题");
+            TreeNode treeNode1 = new TreeNode("控件");
+            TreeNode treeNode2 = new TreeNode("主题");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             uiAvatar = new UIAvatar();
             StyleManager = new UIStyleManager(components);
@@ -73,16 +70,9 @@ namespace ChiSaTo
             treeNode1.ImageIndex = 1;
             treeNode1.Name = "节点0";
             treeNode1.Text = "控件";
-            //treeNode2.Name = "节点1";
-            //treeNode2.Text = "窗体";
-            //treeNode3.Name = "节点2";
-            //treeNode3.Text = "图表";
-            //treeNode4.Name = "节点0";
-            //treeNode4.Text = "工控";
-            treeNode5.Name = "节点2";
-            treeNode5.Text = "主题";
-            //Header.Nodes.AddRange(new TreeNode[] { treeNode1, treeNode2, treeNode3, treeNode4, treeNode5 });
-            Header.Nodes.AddRange(new TreeNode[] { treeNode1,   treeNode5 });
+            treeNode2.Name = "节点2";
+            treeNode2.Text = "主题";
+            Header.Nodes.AddRange(new TreeNode[] { treeNode1, treeNode2 });
             Header.NodeSize = new Size(110, 45);
             Header.SelectedForeColor = Color.FromArgb(220, 155, 40);
             Header.SelectedHighColor = Color.FromArgb(220, 155, 40);
@@ -94,7 +84,7 @@ namespace ChiSaTo
             // uiAvatar
             // 
             uiAvatar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            uiAvatar.Font = new Font("Microsoft YaHei", 12F);
+            uiAvatar.Font = new Font("微软雅黑", 12F);
             uiAvatar.ForeColor = Color.FromArgb(220, 155, 40);
             uiAvatar.Icon = UIAvatar.UIIcon.Image;
             uiAvatar.Image = Properties.Resources.avtarhutao;
@@ -114,7 +104,7 @@ namespace ChiSaTo
             // uiContextMenuStrip1
             // 
             uiContextMenuStrip1.BackColor = Color.FromArgb(243, 249, 255);
-            uiContextMenuStrip1.Font = new Font("Microsoft YaHei", 12F);
+            uiContextMenuStrip1.Font = new Font("微软雅黑", 12F);
             uiContextMenuStrip1.IsScaled = true;
             uiContextMenuStrip1.Items.AddRange(new ToolStripItem[] { 关于ToolStripMenuItem, 关于ToolStripMenuItem1 });
             uiContextMenuStrip1.Name = "uiContextMenuStrip1";
@@ -137,10 +127,10 @@ namespace ChiSaTo
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(3, 21);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 25);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(227, 74);
+            pictureBox1.Size = new Size(313, 42);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;

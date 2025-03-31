@@ -36,22 +36,20 @@ namespace ChiSaTo
             uiLine2 = new UILine();
             uiLine1 = new UILine();
             uiButton_Commit = new UIButton();
-            uiButton14 = new UIButton();
+            uiButtonRepo = new UIButton();
             open_dir_buttion = new UIButton();
-            Button_new_post = new UIButton();
             uiButton_Push = new UIButton();
             uiToolTip1 = new UIToolTip(components);
-            post_title_input_box = new UITextBox();
             uiTextBox_commit_msg = new UITextBox();
-            uiLabel1 = new UILabel();
+            uiTextBoxBlogUrlSettings = new UITextBox();
             uiLine3 = new UILine();
             FlowLayoutPanel_Recent = new UIFlowLayoutPanel();
             uiLabel2 = new UILabel();
             uiLabel3 = new UILabel();
             LinkLabel_BLOG_PATH = new UILinkLabel();
             btnAdd = new UISymbolButton();
-            uiLinkLabel1 = new UILinkLabel();
-            uiLinkLabel2 = new UILinkLabel();
+            uiLinkLabelBlogUrl = new UILinkLabel();
+            uiButton1 = new UIButton();
             SuspendLayout();
             // 
             // uiLine5
@@ -154,30 +152,30 @@ namespace ChiSaTo
             uiButton_Commit.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             uiButton_Commit.Click += uiButton_Commit_Click;
             // 
-            // uiButton14
+            // uiButtonRepo
             // 
-            uiButton14.Cursor = Cursors.Hand;
-            uiButton14.FillColor = Color.FromArgb(220, 155, 40);
-            uiButton14.FillColor2 = Color.FromArgb(220, 155, 40);
-            uiButton14.FillHoverColor = Color.FromArgb(227, 175, 83);
-            uiButton14.FillPressColor = Color.FromArgb(176, 124, 32);
-            uiButton14.FillSelectedColor = Color.FromArgb(176, 124, 32);
-            uiButton14.Font = new Font("微软雅黑", 12F);
-            uiButton14.Location = new Point(589, 330);
-            uiButton14.MinimumSize = new Size(1, 1);
-            uiButton14.Name = "uiButton14";
-            uiButton14.Radius = 35;
-            uiButton14.RectColor = Color.FromArgb(220, 155, 40);
-            uiButton14.RectHoverColor = Color.FromArgb(227, 175, 83);
-            uiButton14.RectPressColor = Color.FromArgb(176, 124, 32);
-            uiButton14.RectSelectedColor = Color.FromArgb(176, 124, 32);
-            uiButton14.Size = new Size(100, 35);
-            uiButton14.Style = UIStyle.Orange;
-            uiButton14.StyleCustomMode = true;
-            uiButton14.TabIndex = 75;
-            uiButton14.Text = "Github";
-            uiButton14.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            uiButton14.Click += OpenGithubWithBrowserButtion_Click;
+            uiButtonRepo.Cursor = Cursors.Hand;
+            uiButtonRepo.FillColor = Color.FromArgb(220, 155, 40);
+            uiButtonRepo.FillColor2 = Color.FromArgb(220, 155, 40);
+            uiButtonRepo.FillHoverColor = Color.FromArgb(227, 175, 83);
+            uiButtonRepo.FillPressColor = Color.FromArgb(176, 124, 32);
+            uiButtonRepo.FillSelectedColor = Color.FromArgb(176, 124, 32);
+            uiButtonRepo.Font = new Font("微软雅黑", 12F);
+            uiButtonRepo.Location = new Point(589, 330);
+            uiButtonRepo.MinimumSize = new Size(1, 1);
+            uiButtonRepo.Name = "uiButtonRepo";
+            uiButtonRepo.Radius = 35;
+            uiButtonRepo.RectColor = Color.FromArgb(220, 155, 40);
+            uiButtonRepo.RectHoverColor = Color.FromArgb(227, 175, 83);
+            uiButtonRepo.RectPressColor = Color.FromArgb(176, 124, 32);
+            uiButtonRepo.RectSelectedColor = Color.FromArgb(176, 124, 32);
+            uiButtonRepo.Size = new Size(100, 35);
+            uiButtonRepo.Style = UIStyle.Orange;
+            uiButtonRepo.StyleCustomMode = true;
+            uiButtonRepo.TabIndex = 75;
+            uiButtonRepo.Text = "Open Repo ";
+            uiButtonRepo.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            uiButtonRepo.Click += OpenGithubWithBrowserButtion_Click;
             // 
             // open_dir_buttion
             // 
@@ -188,7 +186,7 @@ namespace ChiSaTo
             open_dir_buttion.FillPressColor = Color.FromArgb(88, 152, 32);
             open_dir_buttion.FillSelectedColor = Color.FromArgb(88, 152, 32);
             open_dir_buttion.Font = new Font("微软雅黑", 12F);
-            open_dir_buttion.Location = new Point(471, 81);
+            open_dir_buttion.Location = new Point(51, 81);
             open_dir_buttion.MinimumSize = new Size(1, 1);
             open_dir_buttion.Name = "open_dir_buttion";
             open_dir_buttion.Radius = 35;
@@ -200,24 +198,9 @@ namespace ChiSaTo
             open_dir_buttion.Style = UIStyle.Green;
             open_dir_buttion.StyleCustomMode = true;
             open_dir_buttion.TabIndex = 73;
-            open_dir_buttion.Text = "打开";
+            open_dir_buttion.Text = "打开主目录";
             open_dir_buttion.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             open_dir_buttion.Click += open_dir_buttion_Click;
-            // 
-            // Button_new_post
-            // 
-            Button_new_post.Cursor = Cursors.Hand;
-            Button_new_post.Font = new Font("微软雅黑", 12F);
-            Button_new_post.Location = new Point(352, 81);
-            Button_new_post.MinimumSize = new Size(1, 1);
-            Button_new_post.Name = "Button_new_post";
-            Button_new_post.Radius = 35;
-            Button_new_post.Size = new Size(100, 35);
-            Button_new_post.StyleCustomMode = true;
-            Button_new_post.TabIndex = 72;
-            Button_new_post.Text = "创建";
-            Button_new_post.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            Button_new_post.Click += Button_new_post_Click;
             // 
             // uiButton_Push
             // 
@@ -250,33 +233,6 @@ namespace ChiSaTo
             uiToolTip1.ForeColor = Color.FromArgb(239, 239, 239);
             uiToolTip1.OwnerDraw = true;
             // 
-            // post_title_input_box
-            // 
-            post_title_input_box.ButtonFillColor = Color.FromArgb(220, 155, 40);
-            post_title_input_box.ButtonFillHoverColor = Color.FromArgb(227, 175, 83);
-            post_title_input_box.ButtonFillPressColor = Color.FromArgb(176, 124, 32);
-            post_title_input_box.ButtonRectColor = Color.FromArgb(220, 155, 40);
-            post_title_input_box.ButtonRectHoverColor = Color.FromArgb(227, 175, 83);
-            post_title_input_box.ButtonRectPressColor = Color.FromArgb(176, 124, 32);
-            post_title_input_box.Cursor = Cursors.IBeam;
-            post_title_input_box.FillColor2 = Color.FromArgb(253, 249, 241);
-            post_title_input_box.Font = new Font("微软雅黑", 12F);
-            post_title_input_box.Location = new Point(117, 83);
-            post_title_input_box.Margin = new Padding(4, 5, 4, 5);
-            post_title_input_box.MinimumSize = new Size(1, 16);
-            post_title_input_box.Name = "post_title_input_box";
-            post_title_input_box.RectColor = Color.FromArgb(220, 155, 40);
-            post_title_input_box.ScrollBarColor = Color.FromArgb(220, 155, 40);
-            post_title_input_box.ShowButton = true;
-            post_title_input_box.ShowText = false;
-            post_title_input_box.Size = new Size(221, 29);
-            post_title_input_box.Style = UIStyle.Custom;
-            post_title_input_box.TabIndex = 119;
-            post_title_input_box.TextAlignment = ContentAlignment.MiddleLeft;
-            uiToolTip1.SetToolTip(post_title_input_box, "Hello world!");
-            post_title_input_box.Watermark = "输入标题";
-            post_title_input_box.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            // 
             // uiTextBox_commit_msg
             // 
             uiTextBox_commit_msg.ButtonFillColor = Color.FromArgb(220, 155, 40);
@@ -304,18 +260,32 @@ namespace ChiSaTo
             uiTextBox_commit_msg.Watermark = "Input Commit Message";
             uiTextBox_commit_msg.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
-            // uiLabel1
+            // uiTextBoxBlogUrlSettings
             // 
-            uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("微软雅黑", 12F);
-            uiLabel1.Location = new Point(33, 87);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(90, 21);
-            uiLabel1.Style = UIStyle.Custom;
-            uiLabel1.TabIndex = 118;
-            uiLabel1.Text = "文章标题：";
-            uiLabel1.TextAlign = ContentAlignment.MiddleLeft;
-            uiLabel1.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            uiTextBoxBlogUrlSettings.ButtonFillColor = Color.FromArgb(220, 155, 40);
+            uiTextBoxBlogUrlSettings.ButtonFillHoverColor = Color.FromArgb(227, 175, 83);
+            uiTextBoxBlogUrlSettings.ButtonFillPressColor = Color.FromArgb(176, 124, 32);
+            uiTextBoxBlogUrlSettings.ButtonRectColor = Color.FromArgb(220, 155, 40);
+            uiTextBoxBlogUrlSettings.ButtonRectHoverColor = Color.FromArgb(227, 175, 83);
+            uiTextBoxBlogUrlSettings.ButtonRectPressColor = Color.FromArgb(176, 124, 32);
+            uiTextBoxBlogUrlSettings.Cursor = Cursors.IBeam;
+            uiTextBoxBlogUrlSettings.FillColor2 = Color.FromArgb(253, 249, 241);
+            uiTextBoxBlogUrlSettings.Font = new Font("微软雅黑", 12F);
+            uiTextBoxBlogUrlSettings.Location = new Point(300, 477);
+            uiTextBoxBlogUrlSettings.Margin = new Padding(4, 5, 4, 5);
+            uiTextBoxBlogUrlSettings.MinimumSize = new Size(1, 16);
+            uiTextBoxBlogUrlSettings.Name = "uiTextBoxBlogUrlSettings";
+            uiTextBoxBlogUrlSettings.RectColor = Color.FromArgb(220, 155, 40);
+            uiTextBoxBlogUrlSettings.ScrollBarColor = Color.FromArgb(220, 155, 40);
+            uiTextBoxBlogUrlSettings.ShowButton = true;
+            uiTextBoxBlogUrlSettings.ShowText = false;
+            uiTextBoxBlogUrlSettings.Size = new Size(221, 29);
+            uiTextBoxBlogUrlSettings.Style = UIStyle.Custom;
+            uiTextBoxBlogUrlSettings.TabIndex = 123;
+            uiTextBoxBlogUrlSettings.TextAlignment = ContentAlignment.MiddleLeft;
+            uiToolTip1.SetToolTip(uiTextBoxBlogUrlSettings, "Hello world!");
+            uiTextBoxBlogUrlSettings.Watermark = "Input Blog url";
+            uiTextBoxBlogUrlSettings.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             // 
             // uiLine3
             // 
@@ -404,7 +374,7 @@ namespace ChiSaTo
             btnAdd.FillPressColor = Color.FromArgb(176, 124, 32);
             btnAdd.FillSelectedColor = Color.FromArgb(176, 124, 32);
             btnAdd.Font = new Font("微软雅黑", 12F);
-            btnAdd.Location = new Point(589, 81);
+            btnAdd.Location = new Point(169, 81);
             btnAdd.MinimumSize = new Size(1, 1);
             btnAdd.Name = "btnAdd";
             btnAdd.Padding = new Padding(28, 0, 0, 0);
@@ -416,43 +386,51 @@ namespace ChiSaTo
             btnAdd.Style = UIStyle.Custom;
             btnAdd.Symbol = 61543;
             btnAdd.TabIndex = 125;
-            btnAdd.Text = "增加";
+            btnAdd.Text = "新建";
             btnAdd.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
             btnAdd.Click += btnAdd_Click;
             // 
-            // uiLinkLabel1
+            // uiLinkLabelBlogUrl
             // 
-            uiLinkLabel1.ActiveLinkColor = Color.FromArgb(220, 155, 40);
-            uiLinkLabel1.AutoSize = true;
-            uiLinkLabel1.Font = new Font("微软雅黑", 12F);
-            uiLinkLabel1.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            uiLinkLabel1.Location = new Point(49, 383);
-            uiLinkLabel1.Name = "uiLinkLabel1";
-            uiLinkLabel1.Size = new Size(69, 21);
-            uiLinkLabel1.Style = UIStyle.Custom;
-            uiLinkLabel1.TabIndex = 126;
-            uiLinkLabel1.TabStop = true;
-            uiLinkLabel1.Text = "yayi.site";
-            uiLinkLabel1.VisitedLinkColor = Color.FromArgb(230, 80, 80);
-            uiLinkLabel1.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            uiLinkLabel1.LinkClicked += blogurllinklabelclicked;
+            uiLinkLabelBlogUrl.ActiveLinkColor = Color.FromArgb(220, 155, 40);
+            uiLinkLabelBlogUrl.AutoSize = true;
+            uiLinkLabelBlogUrl.Font = new Font("微软雅黑", 12F);
+            uiLinkLabelBlogUrl.LinkBehavior = LinkBehavior.AlwaysUnderline;
+            uiLinkLabelBlogUrl.Location = new Point(49, 383);
+            uiLinkLabelBlogUrl.Name = "uiLinkLabelBlogUrl";
+            uiLinkLabelBlogUrl.Size = new Size(69, 21);
+            uiLinkLabelBlogUrl.Style = UIStyle.Custom;
+            uiLinkLabelBlogUrl.TabIndex = 126;
+            uiLinkLabelBlogUrl.TabStop = true;
+            uiLinkLabelBlogUrl.Text = "yayi.site";
+            uiLinkLabelBlogUrl.VisitedLinkColor = Color.FromArgb(230, 80, 80);
+            uiLinkLabelBlogUrl.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            uiLinkLabelBlogUrl.LinkClicked += blogurllinklabelclicked;
             // 
-            // uiLinkLabel2
+            // uiButton1
             // 
-            uiLinkLabel2.ActiveLinkColor = Color.FromArgb(220, 155, 40);
-            uiLinkLabel2.AutoSize = true;
-            uiLinkLabel2.Font = new Font("微软雅黑", 12F);
-            uiLinkLabel2.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            uiLinkLabel2.Location = new Point(143, 383);
-            uiLinkLabel2.Name = "uiLinkLabel2";
-            uiLinkLabel2.Size = new Size(75, 21);
-            uiLinkLabel2.Style = UIStyle.Custom;
-            uiLinkLabel2.TabIndex = 127;
-            uiLinkLabel2.TabStop = true;
-            uiLinkLabel2.Text = "yuris.site";
-            uiLinkLabel2.VisitedLinkColor = Color.FromArgb(230, 80, 80);
-            uiLinkLabel2.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
-            uiLinkLabel2.LinkClicked += BlogUrlLinkLableClicked;
+            uiButton1.Cursor = Cursors.Hand;
+            uiButton1.FillColor = Color.FromArgb(110, 190, 40);
+            uiButton1.FillColor2 = Color.FromArgb(110, 190, 40);
+            uiButton1.FillHoverColor = Color.FromArgb(139, 203, 83);
+            uiButton1.FillPressColor = Color.FromArgb(88, 152, 32);
+            uiButton1.FillSelectedColor = Color.FromArgb(88, 152, 32);
+            uiButton1.Font = new Font("微软雅黑", 12F);
+            uiButton1.Location = new Point(546, 477);
+            uiButton1.MinimumSize = new Size(1, 1);
+            uiButton1.Name = "uiButton1";
+            uiButton1.Radius = 35;
+            uiButton1.RectColor = Color.FromArgb(110, 190, 40);
+            uiButton1.RectHoverColor = Color.FromArgb(139, 203, 83);
+            uiButton1.RectPressColor = Color.FromArgb(88, 152, 32);
+            uiButton1.RectSelectedColor = Color.FromArgb(88, 152, 32);
+            uiButton1.Size = new Size(100, 35);
+            uiButton1.Style = UIStyle.Green;
+            uiButton1.StyleCustomMode = true;
+            uiButton1.TabIndex = 127;
+            uiButton1.Text = "Save";
+            uiButton1.ZoomScaleRect = new Rectangle(0, 0, 0, 0);
+            uiButton1.Click += uiButton1_Click_1;
             // 
             // FButton
             // 
@@ -460,27 +438,25 @@ namespace ChiSaTo
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1579, 517);
+            ClientSize = new Size(1579, 503);
             ControlBoxFillHoverColor = Color.FromArgb(227, 175, 83);
-            Controls.Add(uiLinkLabel2);
-            Controls.Add(uiLinkLabel1);
+            Controls.Add(uiButton1);
+            Controls.Add(uiTextBoxBlogUrlSettings);
+            Controls.Add(uiLinkLabelBlogUrl);
             Controls.Add(btnAdd);
             Controls.Add(LinkLabel_BLOG_PATH);
             Controls.Add(uiLabel3);
             Controls.Add(uiLabel2);
             Controls.Add(uiTextBox_commit_msg);
             Controls.Add(FlowLayoutPanel_Recent);
-            Controls.Add(uiLabel1);
-            Controls.Add(post_title_input_box);
             Controls.Add(uiLine5);
             Controls.Add(uiLine3);
             Controls.Add(Button_open_folder);
             Controls.Add(uiLine2);
             Controls.Add(uiLine1);
             Controls.Add(uiButton_Commit);
-            Controls.Add(uiButton14);
+            Controls.Add(uiButtonRepo);
             Controls.Add(open_dir_buttion);
-            Controls.Add(Button_new_post);
             Controls.Add(uiButton_Push);
             Name = "FButton";
             Padding = new Padding(0, 35, 0, 0);
@@ -504,13 +480,10 @@ namespace ChiSaTo
         private UILine uiLine2;
         private UILine uiLine1;
         private UIButton uiButton_Commit;
-        private UIButton uiButton14;
+        private UIButton uiButtonRepo;
         private UIButton open_dir_buttion;
-        private UIButton Button_new_post;
         private UIButton uiButton_Push;
         private UIToolTip uiToolTip1;
-        private UILabel uiLabel1;
-        private UITextBox post_title_input_box;
         private UILine uiLine3;
         private UIFlowLayoutPanel FlowLayoutPanel_Recent;
         private UILabel uiLabel2;
@@ -518,7 +491,8 @@ namespace ChiSaTo
         private UILabel uiLabel3;
         private UILinkLabel LinkLabel_BLOG_PATH;
         private UISymbolButton btnAdd;
-        private UILinkLabel uiLinkLabel1;
-        private UILinkLabel uiLinkLabel2;
+        private UILinkLabel uiLinkLabelBlogUrl;
+        private UITextBox uiTextBoxBlogUrlSettings;
+        private UIButton uiButton1;
     }
 }

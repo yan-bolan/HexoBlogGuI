@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 using Sunny.UI;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 namespace ChiSaTo
 {
     public partial class FButton : UIPage
@@ -40,8 +41,10 @@ namespace ChiSaTo
             base.Init();
             //uiSwitch1.Active = uiSwitch4.Active = true;
             //uiSwitch2.Active = uiSwitch3.Active = false;
-
+            //init text
             LinkLabel_BLOG_PATH.Text = Settings1.Default.BlogCateLog;
+            uiLinkLabelBlogUrl.Text = Settings1.Default.Blog_Url;
+
             FlowLayoutPanel_Recent.Clear();
             var bm = new Blog_Main();
             var md_file_latest = bm.GetLatestFiles(bm.Base_post_addr, 20).Select(x => Path.GetFileName(x)).ToList();
@@ -103,12 +106,12 @@ namespace ChiSaTo
             bm.main(Enum_Blog.open_dir, "");
         }
 
-        private void Button_new_post_Click(object sender, EventArgs e)
-        {
-            var bm = new Blog_Main();
+        //private void Button_new_post_Click(object sender, EventArgs e)
+        //{
+        //    var bm = new Blog_Main();
 
-            bm.main(Enum_Blog.New_Post, post_title_input_box.Text.Trim());
-        }
+        //    bm.main(Enum_Blog.New_Post, post_title_input_box.Text.Trim());
+        //}
 
         private void uiButton_Commit_Click(object sender, EventArgs e)
         {
@@ -187,18 +190,21 @@ namespace ChiSaTo
         private void OpenGithubWithBrowserButtion_Click(object sender, EventArgs e)
         {
             //open github with browser
-            Process.Start("explorer.exe", "https://github.com/TangxinGH/Blog");
+            Process.Start("explorer.exe", Settings1.Default.Blog_Repo);
 
         }
 
         private void blogurllinklabelclicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("explorer.exe", "http://www.yayi.site/");
+            Process.Start("explorer.exe", uiLinkLabelBlogUrl.Text);
         }
 
-        private void BlogUrlLinkLableClicked(object sender, LinkLabelLinkClickedEventArgs e)
+
+        private void uiButton1_Click_1(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", "http://www.yuris.site/");
+            Settings1.Default.Blog_Url = uiTextBoxBlogUrlSettings.Text;
+            Settings1.Default.Save();
+            uiLinkLabelBlogUrl.Text = Settings1.Default.Blog_Url;
         }
     }
 }

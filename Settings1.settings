@@ -5,5 +5,11 @@
     <Setting Name="BlogCateLog" Type="System.String" Scope="User">
       <Value Profile="(Default)">D:\\博客\\YuriBlog</Value>
     </Setting>
+    <Setting Name="Blog_Url" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.yayi.site</Value>
+    </Setting>
+    <Setting Name="Blog_Repo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://github.com/TangxinGH/Blog</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
