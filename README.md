@@ -10,7 +10,7 @@ Git：配置好仓库和推送密钥
 
 安装MarkText
 
-
+安装Net9.0
 
 # 配置appsetting.json
 
@@ -23,7 +23,7 @@ Git：配置好仓库和推送密钥
 } 
 ```
 
-# 配置App.config
+# 配置App.config:可在程序里配置
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -72,7 +72,7 @@ hexo.init().then(function(){
         var exec = require('child_process').exec;
         exec( 'explorer.exe' + ' ' + post.path);
     }); 
-    
+
 });
 ```
 
