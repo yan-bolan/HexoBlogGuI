@@ -51,7 +51,7 @@ jobs:
     env:
       SOLUTION_NAME:  ChiSaTo.sln  # 替换为实际解决方案名称
       PROJECT_PATH: ChiSaTo.csproj  # 替换为实际项目路径
-
+      TARGET_FRAMEWORKS: "net9.0-windows;"
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -59,7 +59,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 9.0.x  # 根据实际需要调整版本
+        dotnet-version: 9.0.202  # 根据实际需要调整版本
 
     - name: Restore dependencies
       run: dotnet restore $env:SOLUTION_NAME
