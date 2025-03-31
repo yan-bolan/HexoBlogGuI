@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ChiSaTo" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="BlogCateLog" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\博客\\YuriBlog</Value>
+    </Setting>
+    <Setting Name="Blog_Url" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.yayi.site</Value>
+    </Setting>
+    <Setting Name="Blog_Repo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://github.com/TangxinGH/Blog</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
