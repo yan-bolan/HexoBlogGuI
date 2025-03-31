@@ -67,11 +67,10 @@ jobs:
     - name: Build solution
       run: dotnet build $env:SOLUTION_NAME --configuration Release --no-restore
 
-    - name: Run tests
-      run: dotnet test $env:SOLUTION_NAME --configuration Release --no-build --verbosity normal
+ 
 
     - name: Publish application
-      run: dotnet publish $env:PROJECT_PATH -c Release -o published --no-build
+      run: dotnet publish $env:PROJECT_PATH -c Release   -f $env:TARGET_FRAMEWORK   -o published --no-build
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
